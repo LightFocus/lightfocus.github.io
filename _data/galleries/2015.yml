@@ -1,0 +1,33 @@
+picture_path: 2015
+preview:
+  filename: DSC_0074
+  original: DSC_0074.jpg
+  sizes:
+  - DSC_0074.jpg
+  thumbnail: DSC_0074-thumbnail.jpg
+pictures:
+- filename: 1
+  original: DSC_0074.jpg
+  sizes:
+  - DSC_0074.jpg
+  thumbnail: DSC_0074-thumbnail.jpg
+- filename: 2
+  original: DSC_2922.jpg
+  sizes:
+  - DSC_2922.jpg
+  thumbnail: DSC_2922-thumbnail.jpg
+- filename: 3
+  original: DSC_3185.jpg
+  sizes:
+  - DSC_3185.jpg
+  thumbnail: DSC_3185-thumbnail.jpg
+- filename: 4
+  original: DSC_4682.jpg
+  sizes:
+  - DSC_4682.jpg
+  thumbnail: DSC_4682-thumbnail.jpg
+- filename: 5
+  original: DSC_9044.jpg
+  sizes:
+  - DSC_9044.jpg
+  thumbnail: DSC_9044-thumbnail.jpg

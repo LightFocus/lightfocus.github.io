@@ -375,8 +375,13 @@ header {
 }
 
 .jumbotron-heading{
-    color: white;
-    font-size: 35px;
+    /*background: rgb(5,232,254);
+    background: linear-gradient(294deg, rgba(5,232,254,1) 33%, rgba(255,0,248,1) 66%);*/
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 60px;
+    font-weight: 20px;
 }
 
 .lead {
@@ -1128,3 +1133,48 @@ footer {
 .highlight .gu { color: #75715e; } /* Generic.Subheading & Diff Unified/Comment? */
 .highlight .gd { color: #f92672; } /* Generic.Deleted & Diff Deleted */
 .highlight .gi { color: #a6e22e; } /* Generic.Inserted & Diff Inserted */
+
+/*Custom CSS*/
+
+.table-container {
+	max-width: 1000px;
+	margin-right:auto;
+	margin-left:auto;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	min-height:10vh;
+}
+
+$base-spacing-unit: 24px;
+$half-spacing-unit: $base-spacing-unit / 2;
+$color-form-highlight: #EEEEEE;
+
+.table {
+	width:100%;
+	border:1px solid $color-form-highlight;
+}
+
+.table-header {
+    width:100%;
+    padding:($half-spacing-unit * 1.5) 0;
+}
+
+.table-row {
+	width:100%;
+	padding:($half-spacing-unit * 1.5) 0;
+}
+
+.table-data, .header-item {
+	flex: 1 1 20%;
+	text-align:center;
+}
+
+.card-title{
+    font-size:40px;
+}
+
+p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}

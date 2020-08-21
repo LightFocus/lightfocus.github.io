@@ -1,11 +1,11 @@
 ---
 layout: post
 author: Light Focus
-title: What Hardware to Buy?
+title: 自己装机硬件怎么选？
 date: 2020-08-19T12:52:20.613Z
-thumbnail: /assets/img/posts/hello.jpg
+thumbnail: /assets/img/posts/hardware.jpg
 category: Hardware
-summary: Introduce how to purchase hardware for DIY PC
+summary: Introduce how to choose hardware for DIY PC
 keywords: Hardware, PC
 permalink: /blog/buy-hardware
 ---
@@ -14,6 +14,8 @@ permalink: /blog/buy-hardware
 本文先从最基本的硬件选购开始，介绍各个硬件、教你如何判断一个硬件的性能，以及选购的时候需要注意的事项。
 <h1>一、CPU</h1>
 CPU作为电脑的大脑，肯定是要好好选。能选择的有两家：Intel、AMD，俗称红蓝厂。
+
+<del>自古红蓝出CP</del>
 
 Intel和AMD可以说是老冤家了，从上个世纪就开始CPU市场的竞争，什么第一个64位处理器啊，第一个突破1GHz主频的CPU啊。在很长一段时间里，Intel都是吊打AMD的，只有便宜的电脑才会装AMD的CPU。而今天的故事还要从2014年说起。
 
@@ -36,179 +38,207 @@ Boost频率：可以波动频率的最高值（非手动超频情况下）
 TDP：热设计功耗，和散热及电源的选择密切相关
 
 下面列出Zen2架构的CPU（不包含HEDT平台）
-<table class="tg">
-<thead>
+<div class="table-container">
+<table class="table">
+<thead class="table-header">
 <tr>
-<th class="tg-baqh">型号</th>
-<th class="tg-baqh">售价MSRP($)</th>
-<th class="tg-baqh">核心数/线程数</th>
-<th class="tg-baqh">基准频率(GHz)</th>
-<th class="tg-baqh">Boost频率(GHz)</th>
-<th class="tg-baqh">TDP(W)</th>
+<th class="header-item">型号</th>
+<th class="header-item">售价MSRP($)</th>
+<th class="header-item">核心数/线程数</th>
+<th class="header-item">基准频率(GHz)</th>
+<th class="header-item">Boost频率(GHz)</th>
+<th class="header-item">TDP(W)</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td class="tg-baqh" colspan="6">入门级</td>
+<tr class="tabel-row">
+<td class="table-data" colspan="6">入门级</td>
 </tr>
-<tr>
-<td class="tg-baqh">3100</td>
-<td class="tg-baqh">99</td>
-<td class="tg-baqh">4/8</td>
-<td class="tg-baqh">3.6</td>
-<td class="tg-baqh">3.9</td>
-<td class="tg-baqh">65</td>
+<tr class="tabel-row">
+<td class="table-data">3100</td>
+<td class="table-data">99</td>
+<td class="table-data">4/8</td>
+<td class="table-data">3.6</td>
+<td class="table-data">3.9</td>
+<td class="table-data">65</td>
 </tr>
-<tr>
-<td class="tg-baqh">3300x</td>
-<td class="tg-baqh">120</td>
-<td class="tg-baqh">4/8</td>
-<td class="tg-baqh">3.8</td>
-<td class="tg-baqh">4.3</td>
-<td class="tg-baqh">65</td>
+<tr class="tabel-row">
+<td class="table-data">3300X</td>
+<td class="table-data">120</td>
+<td class="table-data">4/8</td>
+<td class="table-data">3.8</td>
+<td class="table-data">4.3</td>
+<td class="table-data">65</td>
 </tr>
-<tr>
-<td class="tg-baqh" colspan="6">主流级</td>
+<tr class="tabel-row">
+<td class="table-data" colspan="6">主流级</td>
 </tr>
-<tr>
-<td class="tg-baqh">3500x</td>
-<td class="tg-baqh">￥1099</td>
-<td class="tg-baqh">6/6</td>
-<td class="tg-baqh">3.6</td>
-<td class="tg-baqh">4.1</td>
-<td class="tg-baqh">65</td>
+<tr class="tabel-row">
+<td class="table-data">3500X</td>
+<td class="table-data">￥1099</td>
+<td class="table-data">6/6</td>
+<td class="table-data">3.6</td>
+<td class="table-data">4.1</td>
+<td class="table-data">65</td>
 </tr>
-<tr>
-<td class="tg-baqh">3600</td>
-<td class="tg-baqh">199</td>
-<td class="tg-baqh">6/12</td>
-<td class="tg-baqh">3.6</td>
-<td class="tg-baqh">4.2</td>
-<td class="tg-baqh">65</td>
+<tr class="tabel-row">
+<td class="table-data">3600</td>
+<td class="table-data">199</td>
+<td class="table-data">6/12</td>
+<td class="table-data">3.6</td>
+<td class="table-data">4.2</td>
+<td class="table-data">65</td>
 </tr>
-<tr>
-<td class="tg-baqh">3600x</td>
-<td class="tg-baqh">249</td>
-<td class="tg-baqh">6/12</td>
-<td class="tg-baqh">3.8</td>
-<td class="tg-baqh">4.4</td>
-<td class="tg-baqh">95</td>
+<tr class="tabel-row">
+<td class="table-data">3600X</td>
+<td class="table-data">249</td>
+<td class="table-data">6/12</td>
+<td class="table-data">3.8</td>
+<td class="table-data">4.4</td>
+<td class="table-data">95</td>
 </tr>
-<tr>
-<td class="tg-baqh" colspan="6">性能级</td>
+<tr class="tabel-row">
+<td class="table-data">3600XT</td>
+<td class="table-data">249</td>
+<td class="table-data">6/12</td>
+<td class="table-data">3.8</td>
+<td class="table-data">4.5</td>
+<td class="table-data">95</td>
 </tr>
-<tr>
-<td class="tg-baqh">3700x</td>
-<td class="tg-baqh">329</td>
-<td class="tg-baqh">8/16</td>
-<td class="tg-baqh">3.6</td>
-<td class="tg-baqh">4.4</td>
-<td class="tg-baqh">65</td>
+<tr class="tabel-row">
+<td class="table-data" colspan="6">性能级</td>
 </tr>
-<tr>
-<td class="tg-baqh">3800x</td>
-<td class="tg-baqh">399</td>
-<td class="tg-baqh">8/16</td>
-<td class="tg-baqh">3.9</td>
-<td class="tg-baqh">4.5</td>
-<td class="tg-baqh">105</td>
+<tr class="tabel-row">
+<td class="table-data">3700X</td>
+<td class="table-data">329</td>
+<td class="table-data">8/16</td>
+<td class="table-data">3.6</td>
+<td class="table-data">4.4</td>
+<td class="table-data">65</td>
 </tr>
-<tr>
-<td class="tg-baqh" colspan="6">发烧级</td>
+<tr class="tabel-row">
+<td class="table-data">3800X</td>
+<td class="table-data">399</td>
+<td class="table-data">8/16</td>
+<td class="table-data">3.9</td>
+<td class="table-data">4.5</td>
+<td class="table-data">105</td>
 </tr>
-<tr>
-<td class="tg-baqh">3900x</td>
-<td class="tg-baqh">499</td>
-<td class="tg-baqh">12/24</td>
-<td class="tg-baqh">3.8</td>
-<td class="tg-baqh">4.6</td>
-<td class="tg-baqh">105</td>
+<tr class="tabel-row">
+<td class="table-data">3800XT</td>
+<td class="table-data">399</td>
+<td class="table-data">8/16</td>
+<td class="table-data">3.9</td>
+<td class="table-data">4.7</td>
+<td class="table-data">105</td>
 </tr>
-<tr>
-<td class="tg-baqh">3950x</td>
-<td class="tg-baqh">749</td>
-<td class="tg-baqh">16/32</td>
-<td class="tg-baqh">3.5</td>
-<td class="tg-baqh">4.7</td>
-<td class="tg-baqh">105</td>
+<tr class="tabel-row">
+<td class="table-data" colspan="6">发烧级</td>
+</tr>
+<tr class="tabel-row">
+<td class="table-data">3900X</td>
+<td class="table-data">499</td>
+<td class="table-data">12/24</td>
+<td class="table-data">3.8</td>
+<td class="table-data">4.6</td>
+<td class="table-data">105</td>
+</tr>
+<tr class="tabel-row">
+<td class="table-data">3900XT</td>
+<td class="table-data">499</td>
+<td class="table-data">12/24</td>
+<td class="table-data">3.8</td>
+<td class="table-data">4.7</td>
+<td class="table-data">105</td>
+</tr>
+<tr class="tabel-row">
+<td class="table-data">3950X</td>
+<td class="table-data">749</td>
+<td class="table-data">16/32</td>
+<td class="table-data">3.5</td>
+<td class="table-data">4.7</td>
+<td class="table-data">105</td>
 </tr>
 </tbody>
 </table>
-建议预算4000以内装机的用户选择3300x，6000左右的选择3600，10000左右选择3700x。
+</div>
+建议预算4000以内装机的用户选择3300X，6000左右的选择3600，10000左右选择3700X。
 <h1>二、主板</h1>
 选好CPU的同时也就确定了主板可选的范围。
 
 以3代Ryzen为例，其接口为AM4，通过查询我们可以得知支持该接口的芯片组有：
-<table class="tg">
-<thead>
+<div class="table-container">
+<table class="table">
+<thead class="table-header">
 <tr>
-<th class="tg-0lax">型号</th>
-<th class="tg-0lax">PCI Express (PCIe)</th>
-<th class="tg-0lax">市场定位</th>
-<th class="tg-0lax" colspan="4">CPU 支持</th>
+<th class="header-item">型号</th>
+<th class="header-item">PCI Express (PCIe)</th>
+<th class="header-item">市场定位</th>
+<th class="header-item" colspan="4">CPU 支持</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td class="tg-0lax"></td>
-<td class="tg-0lax">芯片组PCIe 通道数</td>
-<td class="tg-0lax"></td>
-<td class="tg-0lax">Zen</td>
-<td class="tg-0lax">Zen+</td>
-<td class="tg-0lax">Zen 2</td>
-<td class="tg-0lax">Zen 3</td>
+<tr class="table-row">
+<td class="table-data"></td>
+<td class="table-data">芯片组PCIe 通道数</td>
+<td class="table-data"></td>
+<td class="table-data">Zen</td>
+<td class="table-data">Zen+</td>
+<td class="table-data">Zen 2</td>
+<td class="table-data">Zen 3</td>
+</tr>
+<tr class="table-row">
+<td class="table-data">X570</td>
+<td class="table-data">PCIe 4.0 ×16</td>
+<td class="table-data" rowspan="3">性能级</td>
+<td class="table-data">否</td>
+<td class="table-data" rowspan="3">是</td>
+<td class="table-data" rowspan="2">是</td>
+<td class="table-data">是</td>
+</tr>
+<tr class="table-row">
+<td class="table-data">X470</td>
+<td class="table-data" rowspan="2">PCIe 2.0 ×8</td>
+<td class="table-data" rowspan="2">是</td>
+<td class="table-data" rowspan="2">否</td>
+</tr>
+<tr class="table-row">
+<td class="table-data">X370</td>
+<td class="table-data">需要BIOS 升级</td>
 </tr>
 <tr>
-<td class="tg-0lax">X570</td>
-<td class="tg-0lax">PCIe 4.0 ×16</td>
-<td class="tg-0lax" rowspan="3">性能级</td>
-<td class="tg-0lax">否</td>
-<td class="tg-0lax" rowspan="3">是</td>
-<td class="tg-0lax" rowspan="2">是</td>
-<td class="tg-0lax">是</td>
+<td class="table-data">B550</td>
+<td class="table-data">PCIe 3.0 ×6</td>
+<td class="table-data" rowspan="3">主流级</td>
+<td class="table-data">否</td>
+<td class="table-data">否</td>
+<td class="table-data" rowspan="2">是</td>
+<td class="table-data">是</td>
 </tr>
-<tr>
-<td class="tg-0lax">X470</td>
-<td class="tg-0lax" rowspan="2">PCIe 2.0 ×8</td>
-<td class="tg-0lax" rowspan="2">是</td>
-<td class="tg-0lax" rowspan="2">否</td>
+<tr class="table-row">
+<td class="table-data">B450</td>
+<td class="table-data" rowspan="2">PCIe 2.0 ×6</td>
+<td class="table-data" rowspan="3">是</td>
+<td class="table-data" rowspan="3">是</td>
+<td class="table-data" rowspan="3">否</td>
 </tr>
-<tr>
-<td class="tg-0lax">X370</td>
-<td class="tg-0lax">需要BIOS 升级</td>
+<tr class="table-row">
+<td class="table-data">B350</td>
+<td class="table-data" rowspan="2">需要BIOS 升级</td>
 </tr>
-<tr>
-<td class="tg-0lax">B550</td>
-<td class="tg-0lax">PCIe 3.0 ×6</td>
-<td class="tg-0lax" rowspan="3">主流级</td>
-<td class="tg-0lax">否</td>
-<td class="tg-0lax">否</td>
-<td class="tg-0lax" rowspan="2">是</td>
-<td class="tg-0lax">是</td>
-</tr>
-<tr>
-<td class="tg-0lax">B450</td>
-<td class="tg-0lax" rowspan="2">PCIe 2.0 ×6</td>
-<td class="tg-0lax" rowspan="3">是</td>
-<td class="tg-0lax" rowspan="3">是</td>
-<td class="tg-0lax" rowspan="3">否</td>
-</tr>
-<tr>
-<td class="tg-0lax">B350</td>
-<td class="tg-0lax" rowspan="2">需要BIOS 升级</td>
-</tr>
-<tr>
-<td class="tg-0lax">A320</td>
-<td class="tg-0lax">PCIe 2.0 ×4</td>
-<td class="tg-0lax">入门级</td>
+<tr class="table-row">
+<td class="table-data">A320</td>
+<td class="table-data">PCIe 2.0 ×4</td>
+<td class="table-data">入门级</td>
 </tr>
 </tbody>
 </table>
+</div>
 不同芯片组的功能、可扩展性、对未来CPU的支持都不一样。对于可能要升级Zen3的用户值得考虑X570和B550，否则一般用户X470和B450也足够了，因为AM4接口只用到Zen3为止。后面更新的CPU又是新的接口要买新的主板。
 
 除了芯片组以外，主板还有一个很关键的参数就是板型。板型决定了主板的大小以及接口数量。
 
-常见的主板板型有：ATX（305mm*244mm）、microATX（244mm*244mm）、Mini-ITX（170mm*170mm）。
+常见的主板板型有：ATX（305mm\*244mm）、microATX（244mm\*244mm）、Mini-ITX（170mm\*170mm）。
 
 想要装一台体积小巧的电脑最佳选择肯定是Mini-ITX的主板，不过Mini-ITX主板一般价格稍贵而且通常只有个一个PCIe接口，所以Crossfire或者SLI就肯定不行了。
 
@@ -226,7 +256,7 @@ AMD这边你能买到最好的显卡就是RX 5700 XT，略逊于NVIDIA的RTX 207
 
 新显卡的独家功能上，NVIDIA更吸引人。光线追踪、DLSS以及CUDA，AMD这边只有RIS比较有看头。注意：GTX 16xx显卡不支持光线追踪及DLSS。
 
-关于上面功能的介绍请移步<a href="https://acgmap.wordpress.com/2020/05/09/%e7%ae%80%e5%8d%95%e4%bb%8b%e7%bb%8drt%e3%80%81dlss%e4%bb%a5%e5%8f%8aris/">这里</a>。
+关于上面功能的介绍请移步<a href="https://lightfocus/github.io/blog/intro-ray-tracing">这里</a>。
 
 下面给出热门在售显卡的参考性能，可以根据实时价格对比购买。
 
@@ -245,88 +275,90 @@ Red Dead Redemption 2(1080p Medium-High): 37 fps
 Battlefield 5(1080p Ultra): 54 fps
 
 Control(1080p High): 32 fps
-<table class="tg">
-<thead>
+<div class="table-container">
+<table class="table">
+<thead class="table-header">
 <tr>
-<th class="tg-0lax">型号</th>
-<th class="tg-0lax">相对性能（1080p）</th>
+<th class="header-item">型号</th>
+<th class="header-item">相对性能（1080p）</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td class="tg-0lax"><span style="color:#00ff00;">GTX 1650</span></td>
-<td class="tg-0lax"><span style="color:#00ff00;">100%</span></td>
+<tr class="table-row">
+<td class="table-data"><span style="color:#00ff00;">GTX 1650</span></td>
+<td class="table-data"><span style="color:#00ff00;">100%</span></td>
 </tr>
-<tr>
-<td class="tg-0lax"><span style="color:#ff0000;">RX 570</span></td>
-<td class="tg-0lax"><span style="color:#ff0000;">114%</span></td>
+<tr class="table-row">
+<td class="table-data"><span style="color:#ff0000;">RX 570</span></td>
+<td class="table-data"><span style="color:#ff0000;">114%</span></td>
 </tr>
-<tr>
-<td class="tg-0lax"><span style="color:#ff0000;">RX 5500</span></td>
-<td class="tg-0lax"><span style="color:#ff0000;">129%</span></td>
+<tr class="table-row">
+<td class="table-data"><span style="color:#ff0000;">RX 5500</span></td>
+<td class="table-data"><span style="color:#ff0000;">129%</span></td>
 </tr>
-<tr>
-<td class="tg-0lax"><span style="color:#ff0000;">RX 580</span></td>
-<td class="tg-0lax"><span style="color:#ff0000;">131%</span></td>
+<tr class="table-row">
+<td class="table-data"><span style="color:#ff0000;">RX 580</span></td>
+<td class="table-data"><span style="color:#ff0000;">131%</span></td>
 </tr>
-<tr>
-<td class="tg-0lax"><span style="color:#ff0000;">RX 5500 XT</span></td>
-<td class="tg-0lax"><span style="color:#ff0000;">132%</span></td>
+<tr class="table-row">
+<td class="table-data"><span style="color:#ff0000;">RX 5500 XT</span></td>
+<td class="table-data"><span style="color:#ff0000;">132%</span></td>
 </tr>
-<tr>
-<td class="tg-0lax"><span style="color:#00ff00;">GTX 1650 Super</span></td>
-<td class="tg-0lax"><span style="color:#00ff00;">135%</span></td>
+<tr class="table-row">
+<td class="table-data"><span style="color:#00ff00;">GTX 1650 Super</span></td>
+<td class="table-data"><span style="color:#00ff00;">135%</span></td>
 </tr>
-<tr>
-<td class="tg-0lax"><span style="color:#00ff00;">GTX 1660</span></td>
-<td class="tg-0lax"><span style="color:#00ff00;">150%</span></td>
+<tr class="table-row">
+<td class="table-data"><span style="color:#00ff00;">GTX 1660</span></td>
+<td class="table-data"><span style="color:#00ff00;">150%</span></td>
 </tr>
-<tr>
-<td class="tg-0lax"><span style="color:#00ff00;">GTX 1660 Super</span></td>
-<td class="tg-0lax"><span style="color:#00ff00;">168%</span></td>
+<tr class="table-row">
+<td class="table-data"><span style="color:#00ff00;">GTX 1660 Super</span></td>
+<td class="table-data"><span style="color:#00ff00;">168%</span></td>
 </tr>
-<tr>
-<td class="tg-0lax"><span style="color:#00ff00;">GTX 1660 Ti</span></td>
-<td class="tg-0lax"><span style="color:#00ff00;">172%</span></td>
+<tr class="table-row">
+<td class="table-data"><span style="color:#00ff00;">GTX 1660 Ti</span></td>
+<td class="table-data"><span style="color:#00ff00;">172%</span></td>
 </tr>
-<tr>
-<td class="tg-0lax"><span style="color:#00ff00;">RTX 2060</span></td>
-<td class="tg-0lax"><span style="color:#00ff00;">202%</span></td>
+<tr class="table-row">
+<td class="table-data"><span style="color:#00ff00;">RTX 2060</span></td>
+<td class="table-data"><span style="color:#00ff00;">202%</span></td>
 </tr>
-<tr>
-<td class="tg-0lax"><span style="color:#ff0000;">RX 5700</span></td>
-<td class="tg-0lax"><span style="color:#ff0000;">210%</span></td>
+<tr class="table-row">
+<td class="table-data"><span style="color:#ff0000;">RX 5700</span></td>
+<td class="table-data"><span style="color:#ff0000;">210%</span></td>
 </tr>
-<tr>
-<td class="tg-0lax"><span style="color:#00ff00;">RTX 2060 Super</span></td>
-<td class="tg-0lax"><span style="color:#00ff00;">227%</span></td>
+<tr class="table-row">
+<td class="table-data"><span style="color:#00ff00;">RTX 2060 Super</span></td>
+<td class="table-data"><span style="color:#00ff00;">227%</span></td>
 </tr>
-<tr>
-<td class="tg-0lax"><span style="color:#00ff00;">RTX 2070</span></td>
-<td class="tg-0lax"><span style="color:#00ff00;">235%</span></td>
+<tr class="table-row">
+<td class="table-data"><span style="color:#00ff00;">RTX 2070</span></td>
+<td class="table-data"><span style="color:#00ff00;">235%</span></td>
 </tr>
-<tr>
-<td class="tg-0lax"><span style="color:#ff0000;">RX 5700 XT</span></td>
-<td class="tg-0lax"><span style="color:#ff0000;">241%</span></td>
+<tr class="table-row">
+<td class="table-data"><span style="color:#ff0000;">RX 5700 XT</span></td>
+<td class="table-data"><span style="color:#ff0000;">241%</span></td>
 </tr>
-<tr>
-<td class="tg-0lax"><span style="color:#00ff00;">RTX 2070 Super</span></td>
-<td class="tg-0lax"><span style="color:#00ff00;">260%</span></td>
+<tr class="table-row">
+<td class="table-data"><span style="color:#00ff00;">RTX 2070 Super</span></td>
+<td class="table-data"><span style="color:#00ff00;">260%</span></td>
 </tr>
-<tr>
-<td class="tg-0lax"><span style="color:#00ff00;">RTX 2080</span></td>
-<td class="tg-0lax"><span style="color:#00ff00;">277%</span></td>
+<tr class="table-row">
+<td class="table-data"><span style="color:#00ff00;">RTX 2080</span></td>
+<td class="table-data"><span style="color:#00ff00;">277%</span></td>
 </tr>
-<tr>
-<td class="tg-0lax"><span style="color:#00ff00;">RTX 2080 Super</span></td>
-<td class="tg-0lax"><span style="color:#00ff00;">294%</span></td>
+<tr class="table-row">
+<td class="table-data"><span style="color:#00ff00;">RTX 2080 Super</span></td>
+<td class="table-data"><span style="color:#00ff00;">294%</span></td>
 </tr>
-<tr>
-<td class="tg-0lax"><span style="color:#00ff00;">RTX 2080 Ti</span></td>
-<td class="tg-0lax"><span style="color:#00ff00;">324%</span></td>
+<tr class="table-row">
+<td class="table-data"><span style="color:#00ff00;">RTX 2080 Ti</span></td>
+<td class="table-data"><span style="color:#00ff00;">324%</span></td>
 </tr>
 </tbody>
 </table>
+</div>
 在你选好了显卡以后，你会发现同一个型号，不同厂家的价格差距很大。同一型号内便宜的称为乞丐版，贵的称为顶级非公版。乞丐版会在供电、RGB以及散热上缩水，同时显卡的频率不如顶级非公版的高。在预算不足又想要高性能的前提下可以买丐版。例如2070 super丐版3300，顶级非公4000出头，但是2080super的丐版只要4300。这种情况下选择2080super丐版能获得更好的性能。
 <h1>四、内存</h1>
 不考虑上古DDR3的话，买内存就三个重要指标：容量、频率、时序。
@@ -337,7 +369,7 @@ Control(1080p High): 32 fps
 
 对于Zen2架构的用户特别注意，3733MHz是内存延迟的Sweet Spot：
 
-<img class="alignnone size-full wp-image-135" src="https://acgmap.files.wordpress.com/2020/05/306995_d24hymdbbm331.png" alt="306995_d24hymdbbm331" width="2000" height="1023" />
+<img src="https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/hardware/ryzen3memory.jpg" alt="Ryzen3Memory" width="100%">
 
 时序介绍起来比较复杂，对新手来说，记得第一位数字越小越好。因此3600MHz C16的内存比3600MHz C18的内存好。
 
@@ -372,4 +404,5 @@ Control(1080p High): 32 fps
 注意机箱限高。
 
 猫扇是信仰，贵但是不一定好。
-<h2>下一篇文章会介绍怎么把这些硬件拼在一起，成一台可以正常工作的电脑。</h2>
+<h2>以后有时间会介绍怎么把这些硬件拼在一起，成一台可以正常工作的电脑。</h2>
+咕咕咕

@@ -1,9 +1,18 @@
 -
-  title: Mountains
-  directory: mountains
+  title: 2015
+  directory: 2015
   preview:
-    filename: 1.jpg
-    original: 1-thumbnail.jpg
+    filename: DSC_0074.jpg
+    original: DSC_0074-thumbnail.jpg
     sizes:
-    - 1-thumbnail.jpg
-    thumbnail: 1-thumbnail.jpg
+    - DSC_0074-thumbnail.jpg
+    thumbnail: DSC_0074-thumbnail.jpg
+-
+  title: 2016
+  directory: 2016
+  preview:
+    filename: DSC_9486.jpg
+    original: DSC_9486-thumbnail.jpg
+    sizes:
+    - DSC_9486-thumbnail.jpg
+    thumbnail: DSC_9486-thumbnail.jpg

@@ -1,0 +1,28 @@
+picture_path: 2016
+preview:
+  filename: DSC_9486
+  original: DSC_9486.jpg
+  sizes:
+  - DSC_9486.jpg
+  thumbnail: DSC_9486-thumbnail.jpg
+pictures:
+- filename: 1
+  original: DSC_9486.jpg
+  sizes:
+  - DSC_9486.jpg
+  thumbnail: DSC_9486-thumbnail.jpg
+- filename: 2
+  original: DSC_9811.jpg
+  sizes:
+  - DSC_9811.jpg
+  thumbnail: DSC_9811-thumbnail.jpg
+- filename: 3
+  original: DSC_0932.jpg
+  sizes:
+  - DSC_0932.jpg
+  thumbnail: DSC_0932-thumbnail.jpg
+- filename: 4
+  original: 3Y1A1589.jpg
+  sizes:
+  - 3Y1A1589.jpg
+  thumbnail: 3Y1A1589-thumbnail.jpg

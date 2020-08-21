@@ -1,13 +1,13 @@
 ---
 layout: post
 author: Light Focus
-title: Introduction of Ray Tracing
+title: 简单介绍显卡新技术 RTRT, DLSS and RIS
 date: 2020-08-19T11:52:20.613Z
-thumbnail: /assets/img/posts/hello.jpg
+thumbnail: /assets/img/posts/ray-tracing.jpg
 category: Hardware
 summary: Simple intro to RTRT, DLSS, RIS
 keywords: Ray Tracing, Deep Learning, Image Sharpening
-permalink: /blog/intro-ray-tracing
+permalink: /blog/ray-tracing-intro
 ---
 现在的新显卡除了绝对游戏性能以外，独家功能也是一大卖点。NVIDIA的20系显卡带来了RT和DLSS，而AMD的Navi显卡带来了RIS。对于消费者来说可能对这些功能不太熟悉，因此本文简单介绍这些功能背后的原理。
 
@@ -20,11 +20,11 @@ permalink: /blog/intro-ray-tracing
 
 但是那些光线是最终进入到摄像机的呢？我们只能通过逆向推导的方式得知。也就是反过来从摄像机出发，发出一条想象中的光线，通过一系列反射折射直到出现下列情况之一，则停止追踪：该光线不与任意平面相交、该光线与光源相交且光源不是反射面、达到允许的最大追踪深度。上述算法即为光线追踪的基本算法。
 
-<img src="https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/ray-tracing/ray_trace_diagram.jpg" alt="Ray_trace_diagram" width=100%/>
+<img src="https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/ray-tracing/ray_trace_diagram.jpg" alt="Ray_trace_diagram" width="100%"/>
 
 计算过程中，我们需要知道每一次折射、反射的系数，并通过下面几个公式推导出当前像素点的颜色值。
 
-<img src="https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/ray-tracing/ray_tracing_illustration_first_bounce.png" alt="Ray_Tracing_Illustration_First_Bounce" width=100%/>
+<img src="https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/ray-tracing/ray_tracing_illustration_first_bounce.png" alt="Ray_Tracing_Illustration_First_Bounce" width="100%"/>
 
 上图②式中，ka表示环境光反射系数，Ia表示环境光强度，Ii表示点光源，Kd表示漫反射系数，L为点光源单位方向向量，N为观察方向单位法向量，Ks表示一个固定的镜面反射系数，V为观察方向单位法向量，R为镜面反射方向向量，n为镜面反射参数。
 
@@ -38,13 +38,13 @@ permalink: /blog/intro-ray-tracing
 
 我们不妨先看看新显卡的架构：
 
-<img src="https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/ray-tracing/6071743d-b2ac-46aa-865e-02273980932b.png" alt="6071743d-b2ac-46aa-865e-02273980932b" width=100%/>
+<img src="https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/ray-tracing/6071743d-b2ac-46aa-865e-02273980932b.png" alt="6071743d-b2ac-46aa-865e-02273980932b" width="100%"/>
 
 可以看到，Turing架构配备了RT Cores。根据NVIDIA的说法，新显卡和上一代比起来在光线追踪上快了8倍。那么问题来了，RT Cores是怎么做到硬件加速的呢？
 
 RT Cores其实是对BVH（Bounding volume hierarchy）做了加速。BVH把集合对象包裹在树的叶子节点中，越接近根节点则包含的对象越多。下图就是一个BVH的例子。
 
-<img src="https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/ray-tracing/1000px-example_of_bounding_volume_hierarchy.jpg" alt="1000px-Example_of_bounding_volume_hierarchy" width=100%/>
+<img src="https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/ray-tracing/1000px-example_of_bounding_volume_hierarchy.jpg" alt="1000px-Example_of_bounding_volume_hierarchy" width="100%"/>
 
 那这和光线追踪有什么关系呢？
 

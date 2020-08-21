@@ -1,61 +1,70 @@
 ---
 layout: post
 author: Light Focus
-title: Which Mac to Buy?
+title: Mac选购指南
 date: 2020-08-19T10:48:20.613Z
-thumbnail: /assets/img/posts/hello.jpg
+thumbnail: /assets/img/posts/mac_family.jpg
 category: Apple
-summary: Analyze which mac should you buy.
+summary: Analyze which model should you buy.
 keywords: Apple, Mac
 permalink: /blog/buy-mac
 ---
 <h4>最后更新于2020.8.19</h4>
 在选购Mac之前，我们首先应该问问自己为什么要买Mac。如果不是因为macOS或者 logo的话，Windows阵营有更好的选择。
 
-Apple在WWDC2020上宣布将于2020年开始由Intel Mac向Apple Silicon Mac过渡，为期两年，因此在这个时候购买Mac就成了一件麻烦事。如果你对Apple Silicon不熟悉的话，其实就是Apple一直在自家iPhone和iPad上用的自己研发的芯片。关于更多Apple Silicon的介绍和更换Apple Silicon能给Mac带来什么优势，可以移步这里。
+Apple在WWDC2020上宣布将于2020年开始由Intel Mac向Apple Silicon Mac过渡，为期两年，因此在这个时候购买Mac就成了一件麻烦事。如果你对Apple Silicon不熟悉的话，其实就是Apple一直在自家iPhone和iPad上用的自己研发的芯片。关于更多Apple Silicon的介绍和更换Apple Silicon能给Mac带来什么优势，可以移步<a href="https://lightfocus.github.io/blog/apple-silicon">这里</a>。
 
 简单来说，我的选择原则如下：
+
 选择Intel Mac如果你：
+
 1.购买Mac是刚需
+
 2.需要在Mac上运行Windows
+
 等待Apple Silicon Mac如果你：
+
 1.想获得更长的系统更新支持
+
 2.主要用Mac进行视频图像处理
 
+
 确定了你需要一台Mac以后，我们可以利用下表根据自己的预算以及对便携性的需求快速选择出适合自己的机型。
-<table class="tg" style="border: 1px solid grey;">
-<thead>
-<tr style="border: 1px solid grey;">
-<th class="tg-0qe0"></th>
-<th class="tg-0qe0">性能较弱</th>
-<th class="tg-0qe0"></th>
-<th class="tg-0qe0">性能强劲</th>
+<div class="table-container">
+<table class="table">
+<thead class="table-header">
+<tr>
+<th class="header-item"></th>
+<th class="header-item">性能较弱</th>
+<th class="header-item"></th>
+<th class="header-item">性能强劲</th>
 </tr>
 </thead>
 <tbody>
-<tr style="border: 1px solid grey;">
-<td class="tg-o79m" style="border: 1px solid grey;">笔记本</td>
-<td class="tg-o79m" style="border: 1px solid grey;">MacBook Air</td>
-<td class="tg-o79m" style="border: 1px solid grey;">MacBook Pro 13'</td>
-<td class="tg-o79m" style="border: 1px solid grey;">MacBook Pro 16'</td>
+<tr class="tabel-row">
+<td class="table-data">笔记本</td>
+<td class="table-data">MacBook Air</td>
+<td class="table-data">MacBook Pro 13'</td>
+<td class="table-data">MacBook Pro 16'</td>
 </tr>
-<tr style="border: 1px solid grey;">
-<td class="tg-0qe0" style="border: 1px solid grey;">台式机</td>
-<td class="tg-0qe0" style="border: 1px solid grey;">Mac Mini</td>
-<td class="tg-0qe0" style="border: 1px solid grey;">iMac 21.5' / 27'</td>
-<td class="tg-0qe0" style="border: 1px solid grey;">iMac Pro / Mac Pro</td>
+<tr class="tabel-row">
+<td class="table-data">台式机</td>
+<td class="table-data">Mac Mini</td>
+<td class="table-data">iMac 21.5' / 27'</td>
+<td class="table-data">iMac Pro / Mac Pro</td>
 </tr>
-<tr style="border: 1px solid grey;">
-<td class="tg-zqmx" style="border: 1px solid grey;">预算范围</td>
-<td class="tg-zqmx" style="border: 1px solid grey;">&lt;¥10000</td>
-<td class="tg-zqmx" style="border: 1px solid grey;">¥10000-16000</td>
-<td class="tg-zqmx" style="border: 1px solid grey;">&gt;¥19000</td>
+<tr class="tabel-row">
+<td class="table-data">预算范围</td>
+<td class="table-data">&lt;¥10000</td>
+<td class="table-data">¥10000-16000</td>
+<td class="table-data">&gt;¥19000</td>
 </tr>
-<tr style="border: 1px solid grey;">
-<td class="tg-0qe0" colspan="4">注：Mac Mini &amp; Mac Pro不带显示器</td>
+<tr class="tabel-row">
+<td colspan="4" class="table-data">注：Mac Mini &amp; Mac Pro不带显示器</td>
 </tr>
 </tbody>
 </table>
+</div>
 当然，因为每种机型里面还有不同的配置可选，所以下文详细展开每一项配置应该怎么选。
 <h2>处理器：</h2>
 适合下列任务：编译、视频编码解码
@@ -86,47 +95,49 @@ Afterburner（Mac Pro）：到这个级别了应该很清楚自己的需求了
 
 <h1 style="text-align: center;">一些简单对比</h1>
 <h2>4 Core MacBook Air vs 2 Thunderbolt MacBook Pro</h2>
-<table class="tg">
-<thead>
+<div class="table-container">
+<table class="table">
+<thead class="table-header">
 <tr>
-<th class="tg-0lax"></th>
-<th class="tg-0lax">4C MacBook Air</th>
-<th class="tg-0lax">2TB MacBook Pro</th>
+<th class="header-item"></th>
+<th class="header-item">4C MacBook Air</th>
+<th class="header-item">2TB MacBook Pro</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td class="tg-0lax">CPU</td>
-<td class="tg-0lax">Intel Core i5 1030NG7</td>
-<td class="tg-0lax">Intel Core i5 8257U</td>
+<tr class="table-row">
+<td class="table-data">CPU</td>
+<td class="table-data">Intel Core i5 1030NG7</td>
+<td class="table-data">Intel Core i5 8257U</td>
 </tr>
-<tr>
-<td class="tg-0lax">内存</td>
-<td class="tg-0lax">8G 3733 MHz</td>
-<td class="tg-0lax">8G 2133 MHz</td>
+<tr class="table-row">
+<td class="table-data">内存</td>
+<td class="table-data">8G 3733 MHz</td>
+<td class="table-data">8G 2133 MHz</td>
 </tr>
-<tr>
-<td class="tg-0lax">显卡</td>
-<td class="tg-0lax">Iris Plus G7</td>
-<td class="tg-0lax">Iris Plus 645</td>
+<tr class="table-row">
+<td class="table-data">显卡</td>
+<td class="table-data">Iris Plus G7</td>
+<td class="table-data">Iris Plus 645</td>
 </tr>
-<tr>
-<td class="tg-0lax">固态硬盘</td>
-<td class="tg-0lax">256G</td>
-<td class="tg-0lax">256G</td>
+<tr class="table-row">
+<td class="table-data">固态硬盘</td>
+<td class="table-data">256G</td>
+<td class="table-data">256G</td>
 </tr>
-<tr>
-<td class="tg-0lax">重量</td>
-<td class="tg-0lax">1.29 kg</td>
-<td class="tg-0lax">1.4 kg</td>
+<tr class="table-row">
+<td class="table-data">重量</td>
+<td class="table-data">1.29 kg</td>
+<td class="table-data">1.4 kg</td>
 </tr>
-<tr>
-<td class="tg-0lax">价格</td>
-<td class="tg-0lax">8499</td>
-<td class="tg-0lax">9999</td>
+<tr class="table-row">
+<td class="table-data">价格</td>
+<td class="table-data">8499</td>
+<td class="table-data">9999</td>
 </tr>
 </tbody>
 </table>
+</div>
 &nbsp;
 
 &nbsp;

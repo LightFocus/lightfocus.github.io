@@ -23,7 +23,7 @@ author_bio: What's up?
 author_email: "lightfocus@qq.com"
 author_location: China
 author_website_url: "https://lightfocus.github.io"
-typewrite-text: My brain@LightFocus ~ % sudo rm -rf /
+typewrite-text: Brain@LightFocus ~ % sudo rm -rf /
 
 author_work_experiences:
             - company_name: Google
@@ -37,13 +37,13 @@ author_education_details:
               - college_logo: unsw.png
                 college_name: UNSW
                 college_url: https://www.unsw.edu.au
-                college_degree: Information Technology
+                college_degree: Information Technology (Current)
                 description: Master of Technology
                 visibility: true
               - college_logo: ynu.png
                 college_name: YNU
                 college_url: https://www.ynu.edu.cn
-                college_degree: Computer Science
+                college_degree: Computer Science (Finished)
                 description: Bachelor of Technology
                 visibility: true
 
