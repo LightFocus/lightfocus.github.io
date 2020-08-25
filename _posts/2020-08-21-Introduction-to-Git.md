@@ -15,7 +15,9 @@ Git is a very popular distributed version control software. Note the word "distr
 
 Before we dive into the commands, let's take a look at the bigger picture.
 
-<img src="https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/git/git_operations.png" width="100%">
+<div style="text-align: center; width: 100%;">
+<img src="https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/git/git_operations.png" style="margin: 0 auto; width: 80%;">
+</div>
 
 If we want to use Git in our project, go into the working folder and type in the command "git init" to initialize git so it knows the scope of which files need to be tracked.
 
@@ -67,8 +69,13 @@ Similarly, if we want to update our local project from the online repositories, 
 But there is one more thing. What if we want to get a copy of other people's git project? We can simply use "git clone &lt;repo&gt;" where &lt;repo&gt; is usually a URL of the repository ends with ".git".
 
 If you want to learn more about Git, here is the cheatsheet that you can work on.
-<img src="https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/git/git-cheatsheet-1.png" width="100%">
 
-<img src="https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/git/git-cheatsheet-2.png" width="100%">
+<div style="text-align: center; width: 100%;">
+<img src="https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/git/git-cheatsheet-1.png" style="margin: 0 auto; width: 80%;">
+</div>
+
+<div style="text-align: center; width: 100%;">
+<img src="https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/git/git-cheatsheet-2.png" style="margin: 0 auto; width: 80%;">
+</div>
 
 So there you have it. Now you can make use of the most popular version control software and hopefully it can make your life easier.
