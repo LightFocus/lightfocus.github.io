@@ -38,13 +38,13 @@ author_education_details:
                 college_name: UNSW
                 college_url: https://www.unsw.edu.au
                 college_degree: Information Technology (Current)
-                description: Master of Technology
+                description: Master of Engineering
                 visibility: true
               - college_logo: ynu.png
                 college_name: YNU
                 college_url: https://www.ynu.edu.cn
                 college_degree: Computer Science (Finished)
-                description: Bachelor of Technology
+                description: Bachelor of Engineering
                 visibility: true
 
 author_project_details:

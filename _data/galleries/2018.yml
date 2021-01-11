@@ -1,0 +1,58 @@
+picture_path: 2018
+preview:
+  filename: DSC01427
+  original: DSC01427.jpg
+  sizes:
+  - DSC01427.jpg
+  thumbnail: DSC01427_1.jpg
+pictures:
+- filename: 1
+  original: DSC00998.jpg
+  sizes:
+  - DSC00998.jpg
+  thumbnail: DSC00998_1.jpg
+- filename: 2
+  original: DSC01012.jpg
+  sizes:
+  - DSC01012.jpg
+  thumbnail: DSC01012_1.jpg
+- filename: 3
+  original: DSC01020.jpg
+  sizes:
+  - DSC01020.jpg
+  thumbnail: DSC01020_1.jpg
+- filename: 4
+  original: DSC01044.jpg
+  sizes:
+  - DSC01044.jpg
+  thumbnail: DSC01044_1.jpg
+- filename: 5
+  original: DSC01276.jpg
+  sizes:
+  - DSC01276.jpg
+  thumbnail: DSC01276_1.jpg
+- filename: 6
+  original: DSC01279.jpg
+  sizes:
+  - DSC01279.jpg
+  thumbnail: DSC01279_1.jpg
+- filename: 7
+  original: DSC01285.jpg
+  sizes:
+  - DSC01285.jpg
+  thumbnail: DSC01285_1.jpg
+- filename: 8
+  original: DSC01363.jpg
+  sizes:
+  - DSC01363.jpg
+  thumbnail: DSC01363_1.jpg
+- filename: 9
+  original: DSC01422.jpg
+  sizes:
+  - DSC01422.jpg
+  thumbnail: DSC01422_1.jpg
+- filename: 10
+  original: DSC01427.jpg
+  sizes:
+  - DSC01427.jpg
+  thumbnail: DSC01427_1.jpg

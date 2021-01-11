@@ -2,17 +2,80 @@
   title: 2015
   directory: 2015
   preview:
-    filename: DSC_0074.jpg
-    original: DSC_0074-thumbnail.jpg
+    filename: DSC_4682.jpg
+    original: DSC_4682.jpg
     sizes:
-    - DSC_0074-thumbnail.jpg
-    thumbnail: DSC_0074-thumbnail.jpg
+    - DSC_4682.jpg
+    thumbnail: DSC_4682_1.jpg
 -
   title: 2016
   directory: 2016
   preview:
-    filename: DSC_9486.jpg
-    original: DSC_9486-thumbnail.jpg
+    filename: DSC_9811.jpg
+    original: DSC_9811.jpg
     sizes:
-    - DSC_9486-thumbnail.jpg
-    thumbnail: DSC_9486-thumbnail.jpg
+    - DSC_9811.jpg
+    thumbnail: DSC_9811_1.jpg
+-
+  title: 2017
+  directory: 2017
+  preview:
+    filename: DSC_3405.jpg
+    original: DSC_3405.jpg
+    sizes:
+    - DSC_3405.jpg
+    thumbnail: DSC_3405_1.jpg
+-
+  title: 2018
+  directory: 2018
+  preview:
+    filename: DSC01427.jpg
+    original: DSC01427.jpg
+    sizes:
+    - DSC01427.jpg
+    thumbnail: DSC01427_1.jpg
+-
+  title: 2019 Part 1
+  directory: 20191
+  preview:
+    filename: DSC00015.jpg
+    original: DSC00015.jpg
+    sizes:
+    - DSC00015.jpg
+    thumbnail: DSC00015_1.jpg
+-
+  title: 2019 Part 2
+  directory: 20192
+  preview:
+    filename: DSC01115.jpg
+    original: DSC01115.jpg
+    sizes:
+    - DSC01115.jpg
+    thumbnail: DSC01115_1.jpg
+-
+  title: 2020 Part 1
+  directory: 20201
+  preview:
+    filename: P1047363.jpg
+    original: P1047363.jpg
+    sizes:
+    - P1047363.jpg
+    thumbnail: P1047363_1.jpg
+-
+  title: 2020 Part 2
+  directory: 20202
+  preview:
+    filename: IMG_0199.jpg
+    original: IMG_0199.jpg
+    sizes:
+    - IMG_0199.jpg
+    thumbnail: IMG_0199_1.jpg
+-
+  title: 2020 Part 3
+  directory: 20203
+  preview:
+    filename: IMG_0957.jpg
+    original: IMG_0957.jpg
+    sizes:
+    - IMG_0957.jpg
+    thumbnail: IMG_0957_1.jpg

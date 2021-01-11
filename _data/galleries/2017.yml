@@ -1,0 +1,73 @@
+picture_path: 2017
+preview:
+  filename: DSC_3405
+  original: DSC_3405.jpg
+  sizes:
+  - DSC_3405.jpg
+  thumbnail: DSC_3405_1.jpg
+pictures:
+- filename: 1
+  original: DSC_3386.jpg
+  sizes:
+  - DSC_3386.jpg
+  thumbnail: DSC_3386_1.jpg
+- filename: 2
+  original: DSC_3405.jpg
+  sizes:
+  - DSC_3405.jpg
+  thumbnail: DSC_3405_1.jpg
+- filename: 3
+  original: DSC_3483.jpg
+  sizes:
+  - DSC_3483.jpg
+  thumbnail: DSC_3483_1.jpg
+- filename: 4
+  original: DSC_3558.jpg
+  sizes:
+  - DSC_3558.jpg
+  thumbnail: DSC_3558_1.jpg
+- filename: 5
+  original: DSC_3814.jpg
+  sizes:
+  - DSC_3814.jpg
+  thumbnail: DSC_3814_1.jpg
+- filename: 6
+  original: DSC_3850.jpg
+  sizes:
+  - DSC_3850.jpg
+  thumbnail: DSC_3850_1.jpg
+- filename: 7
+  original: DSC_3919.jpg
+  sizes:
+  - DSC_3919.jpg
+  thumbnail: DSC_3919_1.jpg
+- filename: 8
+  original: DSC_3941.jpg
+  sizes:
+  - DSC_3941.jpg
+  thumbnail: DSC_3941_1.jpg
+- filename: 9
+  original: DSC_4190.jpg
+  sizes:
+  - DSC_4190.jpg
+  thumbnail: DSC_4190_1.jpg
+- filename: 10
+  original: DSC_4272.jpg
+  sizes:
+  - DSC_4272.jpg
+  thumbnail: DSC_4272_1.jpg
+- filename: 11
+  original: DSC_4327.jpg
+  sizes:
+  - DSC_4327.jpg
+  thumbnail: DSC_4327_1.jpg
+- filename: 12
+  original: DSC_4531.jpg
+  sizes:
+  - DSC_4531.jpg
+  thumbnail: DSC_4531_1.jpg
+- filename: 13
+  original: DSC_4578.jpg
+  sizes:
+  - DSC_4578.jpg
+  thumbnail: DSC_4578_1.jpg
