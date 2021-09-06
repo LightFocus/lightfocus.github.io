@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="icon" href="/assets/images/logo.png">
+
+<title>Introduction to Git | Light Focus' Blog</title>
+
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Introduction to Git | Light Focus’ Blog</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="Introduction to Git" />
+<meta name="author" content="lightfocus" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="As long as you work on computers, you’re likely running into a situation where you need to constantly modify a file or a folder. Problem is that when you want to check what it was like 3 days ago or you want to undo your modification, things will get tricky. That’s when version control comes to our aid." />
+<meta property="og:description" content="As long as you work on computers, you’re likely running into a situation where you need to constantly modify a file or a folder. Problem is that when you want to check what it was like 3 days ago or you want to undo your modification, things will get tricky. That’s when version control comes to our aid." />
+<meta property="og:site_name" content="Light Focus’ Blog" />
+<meta property="og:image" content="https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/cover/git.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-08-21T00:00:00+08:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/cover/git.png" />
+<meta property="twitter:title" content="Introduction to Git" />
+<script type="application/ld+json">
+{"image":"https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/cover/git.png","url":"/Introduction-to-Git/","headline":"Introduction to Git","dateModified":"2020-08-21T00:00:00+08:00","datePublished":"2020-08-21T00:00:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"/Introduction-to-Git/"},"author":{"@type":"Person","name":"lightfocus"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"/assets/images/logo.png"},"name":"lightfocus"},"description":"As long as you work on computers, you’re likely running into a situation where you need to constantly modify a file or a folder. Problem is that when you want to check what it was like 3 days ago or you want to undo your modification, things will get tricky. That’s when version control comes to our aid.","@type":"BlogPosting","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    
+<link href="/assets/css/prism.css" rel="stylesheet">
+
+<link href="/assets/css/theme.css" rel="stylesheet">
+
+<script src="/assets/js/jquery.min.js"></script>
+
+</head>
+
+
+
+
+<body>
+	<!-- defer loading of font and font awesome -->
+	<noscript id="deferred-styles">
+		<link href="https://fonts.googleapis.com/css?family=Sen:400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	</noscript>
+
+<!-- Begin Sidebar Navigation
+================================================== -->
+
+<div class="sidebar">    
+</div>   
+<div class="nav-icon">
+    <div class="hamburger-bar"></div>
+</div>
+<div id="blackover-nav" class="blackover"></div>
+<nav id="menu">
+    <ul>
+        <h3>Navigation</h3>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/authors">Contributors</a></li>
+        <li><a href="/contact">Contact</a></li>       
+    </ul>   
+</nav>
+
+<script src="/assets/js/lunr.js"></script>
+
+<style>
+    
+</style>
+
+<div class="wrap-search">
+    <div class="d-flex align-items-center ml-auto">
+        <i class="fas fa-search show-search"></i>
+        <form class="bd-search ml-3" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+            <input type="text" class="form-control bigradius text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and enter..."/>
+        </form>
+    </div>
+</div>
+
+<div id="lunrsearchresults">
+    <ul></ul>
+</div>
+
+<script src="/assets/js/lunrsearchengine.js"></script>
+
+
+<!-- End Sidebar Navigation
+================================================== -->
+
+<div class="site-content ">
+
+<div class="container">
+
+    <!-- Site Logo/Name
+    ================================================== -->
+   
+    <a class="navbar-brand" href="/">
+        <img src="/assets/images/logo.png" alt="Light Focus' Blog">
+    </a>  
+   
+
+    <!-- Site Tag
+    ================================================== -->
+    
+
+    <!-- Content
+    ================================================== -->
+    <div class="main-content">
+        <div class="entry-header">
+    <!-- Post Title -->
+    <h1 class="posttitle">Introduction to Git</h1>
+    <!-- Author & Date  Box -->
+    
+    
+    <div class="d-flex align-items-center mt-4">
+        <div>
+            
+            <img class="author-thumb" src="/assets/images/avatar.png" alt="Light Focus">
+            
+        </div>            
+        <div>
+        Written by Light Focus on 
+        <span class="post-date"><time class="post-date" datetime="2020-08-21">21 Aug 2020</time></span>           
+        
+        </div>            
+    </div>
+    
+</div>
+
+<!-- Adsense under title if enabled from _config.yml (change your pub id and slot) -->
+
+
+<!-- Featured Image -->
+
+<div class="entry-featured-image">
+    
+    <img class="featured-image " src="https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/cover/git.png" alt="Introduction to Git">
+    
+</div>
+
+
+<!-- Content -->
+<!-- Post, Page Content
+================================================== -->
+<div class="article-post">
+    <!-- Toc if any -->
+    
+    <!-- End Toc -->
+    <p>As long as you work on computers, you’re likely running into a situation where you need to constantly modify a file or a folder. Problem is that when you want to check what it was like 3 days ago or you want to undo your modification, things will get tricky. That’s when version control comes to our aid.</p>
+
+<p>Git is a very popular distributed version control software. Note the word “distributed”, meaning that it will not only work locally on your computer but also can be used remotely. Since Git is a command-line based tool, you need to learn the syntax to make the best use of it.</p>
+
+<p>Before we dive into the commands, let’s take a look at the bigger picture.</p>
+
+<div style="text-align: center; width: 100%;">
+<img src="https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/git/git_operations.png" style="margin: 0 auto; width: 80%;" />
+</div>
+
+<p>If we want to use Git in our project, go into the working folder and type in the command “git init” to initialize git so it knows the scope of which files need to be tracked.</p>
+
+<p><img src="https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/git/git_init.png" width="100%" /></p>
+
+<p>After initialization, we can use the command “git status” to verify the current status of git, which in this case, you can see all files haven’t been added to git. Whenever you want to check the status, you can use this command.</p>
+
+<p><img src="https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/git/git_status.png" width="100%" /></p>
+
+<p>To add these files to git, we will use the command “git add .” where the dot means all files. This will add all files within the scope of git to the “stage” where you can later decide whether you want to add them into the branch. Alternatively, you can use “git add &lt;filename&gt;” to add the specific file you want to add.</p>
+
+<p><img src="https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/git/git_add.png" width="100%" /></p>
+
+<p>Once we confirm all files in the stage need to be committed to the branch, we type in “git commit -m your commit”.</p>
+
+<p><img src="https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/git/git_commit.png" width="100%" />
+If we use the command “git log”, we can see all the commits we’ve done so far.</p>
+
+<p><img src="https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/git/git_log.png" width="100%" /></p>
+
+<p>Since Git tracks all the commits, you can easily revert to the previous commit if you wish. Notice every commit has a long special number, we can use that number to clarify which commit we want to revert to. Type in “git reset &lt;commit number&gt;” and off you go.</p>
+
+<p><img src="https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/git/git_reset.png" width="100%" /></p>
+
+<p>Another important feature of version control is to be able to work on different branches. If I have an idea but I’m not sure if it will be in the final project, I can use branches to experiment with my idea without affecting the master branch.</p>
+
+<p>By default, you’re working on the master branch. You can make new branches by typing “git branch &lt;branchname&gt;”. If you’re not sure which branch you’re working on, you can use the command “git branch” to check it out, the branch you’re on indicates by an asterisk.</p>
+
+<p><img src="https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/git/git_branch.png" width="100%" /></p>
+
+<p>To move between branches, type in “git checkout &lt;branchname&gt;”.</p>
+
+<p><img src="https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/git/git_checkout.png" width="100%" /></p>
+
+<p>When you’re satisfied with your branch and want to merge it with the current branch, you can use the command “git merge &lt;branchname&gt;”.</p>
+
+<p><img src="https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/git/git_merge.png" width="100%" /></p>
+
+<p>Now you know what to do when you add or modify files, more importantly when you want to undo the changes or make a branch. That wraps up the basics of git on your local computer. But remember we talked about “distributed”, so let’s talk about the remote capability of git next.</p>
+
+<p>To simplify this post, we only talk about the most common commands you need to use.</p>
+
+<p>When you want to publish your git project online, you first need to specify where you want to put by using the command “git remote add &lt;name&gt; &lt;url&gt;” where we used to name it “origin”, but choose your name anyway.</p>
+
+<p>After that, we need to push our git project to the Internet. Type in “git push &lt;remote&gt; &lt;branch&gt;” where &lt;remote&gt; is the name you give and &lt;branch&gt; specifies the branch you want to push, usually master.</p>
+
+<p>Similarly, if we want to update our local project from the online repositories, we can use “git pull &lt;remote&gt;”. This will automatically merge the online files with your local files.</p>
+
+<p>But there is one more thing. What if we want to get a copy of other people’s git project? We can simply use “git clone &lt;repo&gt;” where &lt;repo&gt; is usually a URL of the repository ends with “.git”.</p>
+
+<p>If you want to learn more about Git, here is the cheatsheet that you can work on.</p>
+
+<div style="text-align: center; width: 100%;">
+<img src="https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/git/git-cheatsheet-1.png" style="margin: 0 auto; width: 80%;" />
+</div>
+
+<div style="text-align: center; width: 100%;">
+<img src="https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/git/git-cheatsheet-2.png" style="margin: 0 auto; width: 80%;" />
+</div>
+
+<p>So there you have it. Now you can make use of the most popular version control software and hopefully it can make your life easier.</p>
+
+</div>
+
+<!-- Rating -->
+
+<div class="rating mt-4 mb-4 d-flex align-items-center">
+    <strong class="mr-1">Rating:</strong> <div class="rating-holder">
+<div class="c-rating c-rating--regular" data-rating-value="5">
+  <button>1</button>
+  <button>2</button>
+  <button>3</button>
+  <button>4</button>
+  <button>5</button>
+</div>
+</div>
+</div>
+
+
+<!-- Author Box if enabled from _config.yml -->
+<!-- Author Box -->
+
+
+<div class="authorbox mb-5 mt-5 pt-4 pb-4">   
+    <div class="row">
+        <div class="wrapavname col-md-3 text-center">
+            
+            <img  class="author-thumb" src="/assets/images/avatar.png" alt="Light Focus">
+            
+            <p class="mt-4 mb-0 small text-center">
+                <a target="_blank" class="d-inline-block mx-1 text-dark" href="https://lightfocus.github.io"><i class="fa fa-link"></i></a> 
+                <a target="_blank" class="d-inline-block mx-1 text-dark" href="https://twitter.com/lightfocus404"><i class="fab fa-twitter"></i></a>
+                <a class="d-inline-block mx-1 text-dark" href="mailto:lightfocus404@gmail.com"><i class="fa fa-envelope"></i></a>
+            </p>
+        </div>
+        <div class="col-md-9">
+            <h4>Light Focus</h4>
+            <p class="mt-3 mb-0">Jack of all trades, master of none.</p>
+        </div>
+    </div> 
+</div> 
+
+
+
+<!-- Comments if not disabled with comments: false -->
+<!-- Comments
+================================================== -->
+ 
+<div class="comments mt-5">
+    <button class="btn btn-outline-dark py-2 px-5 d-block w-100 show-comments"><i class="fa fa-comments text-muted"></i> &nbsp; Load Comments</button>         
+    <div id="comments">  
+        <h4 class="mb-4">Comments</h4>                 
+            <section class="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = ''; 
+        var disqus_developer = 0;
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+     
+    <div class="clearfix"></div>              
+    </div>    
+</div>       
+
+
+<!-- Share -->
+<div class="share">
+    <p>
+        Share
+    </p>
+    <ul>
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://twitter.com/intent/tweet?text=Introduction to Git&url=/Introduction-to-Git/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://facebook.com/sharer.php?u=/Introduction-to-Git/" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=/Introduction-to-Git/" onclick="window.open(this.href, 'width=550,height=435');return false;">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </li>
+
+    </ul>
+</div>
+
+
+<!-- Related Post -->
+<!-- Related Posts
+================================================== -->
+<div class=" related-posts ">  
+
+    
+    <h2 class="text-center mb-4">Explore more like this</h2>
+    
+    
+    <div class="d-flex justify-content-center align-items-center">
+    
+    <!-- Categories -->
+    
+    
+    <a class="smoothscroll badge badge-primary text-capitalize" href="/categories#Software">Software</a>                
+    
+
+    <!-- Tags -->  
+    
+                    
+    <a class="smoothscroll badge badge-primary text-capitalize" href="/tags#Technology">Technology</a>               
+    
+
+    </div>
+
+    
+    
+    
+    <div class="blog-grid-container">
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        
+            
+            
+        
+            
+        
+            
+        
+        
+        </div>        
+</div>
+
+<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
+https://search.google.com/structured-data/testing-tool/u/0/
+================================================== -->
+
+    <script type="application/ld+json">
+    {
+    "@context": "http://schema.org/",
+    "@type": "Review",
+    "itemReviewed": {
+    "@type": "Thing",
+    "name": "Introduction to Git"
+    },
+    "author": {
+    "@type": "Person",
+    "name": "Light Focus"
+    },
+    "datePublished": "2020-08-21",
+    "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "5",
+    "bestRating": "5"
+    }
+    }
+    </script>
+
+    </div>
+
+    
+    
+</div>
+
+<!-- Begin Footer
+================================================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12 text-center text-lg-left">
+                Copyright © 2021 Light Focus' Blog 
+            </div>
+            <div class="col-md-6 col-sm-12 text-center text-lg-right">    
+                <a target="_blank" href="https://www.wowthemes.net/memoirs-free-jekyll-theme/">Memoirs Jekyll Theme</a> by WowThemes.net
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer
+================================================== -->
+
+</div> <!-- /.site-content -->
+
+<!-- Scripts (if you need bootstrap.js, please add it yourself. I didn't use it for performance reasons, it was not needed in this theme)
+================================================== -->
+
+<script src="/assets/js/prism.js"></script>
+
+<script src="/assets/js/theme.js"></script>
+
+
+
+
+<script id="dsq-count-scr" src="//.disqus.com/count.js"></script>
+
+
+</body>
+</html>
