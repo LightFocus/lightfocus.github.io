@@ -5,7 +5,6 @@ author: lightfocus
 categories: [ Software ]
 tags: [ Technology ]
 image: "https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/cover/git.png"
-rating: 5
 ---
 As long as you work on computers, you're likely running into a situation where you need to constantly modify a file or a folder. Problem is that when you want to check what it was like 3 days ago or you want to undo your modification, things will get tricky. That's when version control comes to our aid.
 

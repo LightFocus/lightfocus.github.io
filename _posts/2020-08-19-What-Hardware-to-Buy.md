@@ -5,7 +5,6 @@ author: lightfocus
 categories: [ Hardware ]
 tags: [ Gear ]
 image: "https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/cover/hardware.jpg"
-rating: 5
 ---
 装一台电脑可能对于很多人来说不是一件容易事，但其实它真的很简单。
 

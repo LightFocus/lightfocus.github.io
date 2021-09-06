@@ -5,7 +5,6 @@ author: lightfocus
 categories: [ Graphics ]
 tags: [ Technology ]
 image: "https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/cover/Hsl-Hsv_models.png"
-rating: 5
 ---
 <h2>色彩表示方法</h2>
 人对于色彩的描述是很不准确的。

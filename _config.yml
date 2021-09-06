@@ -5,7 +5,6 @@ description: "' OR 1=1; --"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: ''
-mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 include: ["_pages"]
 permalink: /:title/
 email: lightfocus404@gmail.com
@@ -18,7 +17,7 @@ authors:
     avatar: 'assets/images/avatar.png'
     email: lightfocus404@gmail.com
     web: https://lightfocus.github.io
-    twitter: https://twitter.com/lightfocus404
+    twitter: https://twitter.com/yanggou823
     description: "Jack of all trades, master of none."
   
 # Plugins
@@ -57,7 +56,7 @@ adsense-data-ad-client: "ca-pub-3412143450191416"
 adsense-data-ad-slot: "1363087678"
 
 # Lazy Images ("enabled" or "disabled")
-lazyimages: "disabled"
+lazyimages: "enabled"
 
 # Post Author Box ("enabled" or "disabled")
 authorbox: "enabled"

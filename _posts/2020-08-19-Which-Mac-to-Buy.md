@@ -5,7 +5,6 @@ author: lightfocus
 categories: [ Apple ]
 tags: [ Gear ]
 image: "https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/cover/mac_family.jpg"
-rating: 5
 ---
 <h4>最后更新于2020.8.19</h4>
 在选购Mac之前，我们首先应该问问自己为什么要买Mac。如果不是因为macOS或者 logo的话，Windows阵营有更好的选择。

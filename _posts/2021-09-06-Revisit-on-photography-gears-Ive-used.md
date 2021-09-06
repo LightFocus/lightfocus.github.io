@@ -5,9 +5,11 @@ author: lightfocus
 categories: [ Photography ]
 tags: [ Gear ]
 image: "https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/cover/A7R3.jpg"
-rating: 5
 ---
-I started photography back in late 2014 when I picked up gears my dad no longer use. I had a Nikon D200 and three lenses: Nikon 17-35mm f/2.8D, Nikon 80-200mm f/2.8D, and Nikon 105mm f/2.8G Micro.
+
+<h1>You can find photos I took <a href="/gallery">here</a></h1>
+
+I started photography back in late 2014 when I picked up gears my dad no longer uses. I had a Nikon D200 and three lenses: Nikon 17-35mm f/2.8D, Nikon 80-200mm f/2.8D, and Nikon 105mm f/2.8G Micro.
 <div style="text-align: center; width: 100%;">
 <img src="https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/D200.jpg" style="margin: 0 auto; width: 50%;">
 </div>

@@ -5,13 +5,15 @@
     <description>' OR 1=1; --</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 06 Sep 2021 20:23:59 +0800</pubDate>
-    <lastBuildDate>Mon, 06 Sep 2021 20:23:59 +0800</lastBuildDate>
+    <pubDate>Mon, 06 Sep 2021 23:58:33 +0800</pubDate>
+    <lastBuildDate>Mon, 06 Sep 2021 23:58:33 +0800</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
         <title>Revisit on Photography Gears I've Used</title>
-        <description>&lt;p&gt;I started photography back in late 2014 when I picked up gears my dad no longer use. I had a Nikon D200 and three lenses: Nikon 17-35mm f/2.8D, Nikon 80-200mm f/2.8D, and Nikon 105mm f/2.8G Micro.&lt;/p&gt;
+        <description>&lt;h1&gt;You can find photos I took &lt;a href=&quot;/gallery&quot;&gt;here&lt;/a&gt;&lt;/h1&gt;
+
+&lt;p&gt;I started photography back in late 2014 when I picked up gears my dad no longer uses. I had a Nikon D200 and three lenses: Nikon 17-35mm f/2.8D, Nikon 80-200mm f/2.8D, and Nikon 105mm f/2.8G Micro.&lt;/p&gt;
 &lt;div style=&quot;text-align: center; width: 100%;&quot;&gt;
 &lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/D200.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
 &lt;/div&gt;
@@ -473,9 +475,9 @@ If we use the command “git log”, we can see all the commits we’ve done so 
       </item>
     
       <item>
-        <title>The history of Apple Silicon</title>
+        <title>The history of Apple Silicons</title>
         <description>&lt;h1&gt;Before A series chip, there were...&lt;/h1&gt;
-&lt;p&gt;The original iPhone was announced in 2007 when the chip it uses was not developed by Apple. 4 chips were used in a variety of products by the introduction of the A4 chip in 2010.&lt;/p&gt;
+&lt;p&gt;The original iPhone was announced in 2007 when the chip it uses was not developed by Apple. 4 chips were used in a variety of products before the introduction of the A4 chip in 2010.&lt;/p&gt;
 &lt;h2&gt;APL0098&lt;/h2&gt;
 
 &lt;div style=&quot;text-align: center; width: 100%;&quot;&gt;
@@ -593,8 +595,8 @@ If we use the command “git log”, we can see all the commits we’ve done so 
 &lt;p&gt;M1 chip used on the MacBook Air and MacBook Pro seems like a success as people found its performance amazing. The problem with M1 is mainly the lack of I/O and memory which shows this is an entry-level chip. I’m looking forward to the M2 chip that may come later this year.&lt;/p&gt;
 </description>
         <pubDate>Fri, 21 Aug 2020 00:00:00 +0800</pubDate>
-        <link>/Apple-Silicon/</link>
-        <guid isPermaLink="true">/Apple-Silicon/</guid>
+        <link>/Apple-Silicons/</link>
+        <guid isPermaLink="true">/Apple-Silicons/</guid>
         
         <category>Technology</category>
         

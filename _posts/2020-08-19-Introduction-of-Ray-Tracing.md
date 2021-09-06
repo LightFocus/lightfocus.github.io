@@ -5,7 +5,6 @@ author: lightfocus
 categories: [ Graphics ]
 tags: [ Technology ]
 image: "https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/cover/ray-tracing.jpg"
-rating: 5
 ---
 现在的新显卡除了绝对游戏性能以外，独家功能也是一大卖点。NVIDIA的20系显卡带来了RT和DLSS，而AMD的Navi显卡带来了RIS。对于消费者来说可能对这些功能不太熟悉，因此本文简单介绍这些功能背后的原理。
 

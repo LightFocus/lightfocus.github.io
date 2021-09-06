@@ -5,7 +5,6 @@ author: lightfocus
 categories: [ Apple ]
 tags: [ Technology ]
 image: "https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/cover/Apple-devices.png"
-rating: 5
 ---
 Whether you heard this before or not, Apple is famous for its ecosystem. Simply put, their devices tend to work together for better integrity. In this post, I'd like to introduce some of these features that build up the Apple ecosystem. If you happen to have a bunch of Apple devices in your hand, then you are in for a treat.
 
