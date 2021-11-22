@@ -5,37 +5,182 @@
     <description>' OR 1=1; --</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 07 Sep 2021 18:04:21 +0800</pubDate>
-    <lastBuildDate>Tue, 07 Sep 2021 18:04:21 +0800</lastBuildDate>
+    <pubDate>Mon, 22 Nov 2021 21:17:01 +0800</pubDate>
+    <lastBuildDate>Mon, 22 Nov 2021 21:17:01 +0800</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>Messing around with USBC on RX 6800</title>
+        <description>&lt;p&gt;With the release of the AMD RX 6800 series, we finally have USB Type-C support on AMD GPU while macOS added the support for Rx 6800 series in 11.4.&lt;/p&gt;
+
+&lt;p&gt;If you’re using RX 6800 as previous AMD cards in Hackintosh, namely config WhateverGreen, you’ll find it works as expected. One problem is obviously the USB Type-C port on the back can only be used as a video output and power output.&lt;/p&gt;
+
+&lt;p&gt;To find out why, I took a look at my PCIe devices list.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/usbc/Screen%20Shot%202021-11-22%20at%205.08.05%20PM.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As we can see, in the devices that are under vendor name AMD, we sure can find something like the USB controller.
+But if we check out the USB controller section, we can only see the one that’s provided by the motherboard.&lt;/p&gt;
+
+&lt;p&gt;For now, it’s pretty clear that Apple didn’t do a great job “supporting” this card. This card works as expected, built-in USB controller can be detected, however, macOS failed to pair it with a normal USB controller, instead, it’s paired with AppleAMDUSBXHCIPCI.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/usbc/Screen%20Shot%202021-11-22%20at%205.02.44%20PM.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To solve this prolem, I grabed a copy of XHCI-unsupported.kext and modified it into forcing use AppleUSBXHCISPT.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/usbc/Screen%20Shot%202021-11-22%20at%209.12.58%20PM.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;By doing so, we’re able to see a new USB controller in Hackintool.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/usbc/Screen%20Shot%202021-11-22%20at%209.15.55%20PM.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And with test, I can confirm that the data function of USB is working correctly on that port.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 22 Nov 2021 00:00:00 +0800</pubDate>
+        <link>/Messing-Around-with-USBC-on-RX6800/</link>
+        <guid isPermaLink="true">/Messing-Around-with-USBC-on-RX6800/</guid>
+        
+        <category>Gear</category>
+        
+        
+        <category>Hardware</category>
+        
+      </item>
+    
+      <item>
+        <title>Tamron 28-200mm Long Term Review</title>
+        <description>&lt;p&gt;I bought the Tamron 28-200mm f/2.8-5.6 back in January and have been using it since then. Now more than half a year passed, I think it’s a good time that I write a long-term review for it.&lt;/p&gt;
+
+&lt;p&gt;In my early career in photography, I was told not to buy these kinds of super zoom lenses as they tend to perform badly. When I was checking out the review of this lens, however, many reviewers say that it performs “not like a super zoom lens” which caught my attention. Before switching to the Sony system again, I went to Chongqing and realized how important a telephoto lens is in travel photography. I do not want a dedicated telephoto lens as they’re heavy, that’s why I decided to give this 28-200mm lens a go.&lt;/p&gt;
+
+&lt;p&gt;Compared to other competitors on the market, the Tamron 28-200mm has some pros and cons. It’s compact, lightweight, and relatively cheap with a brighter than normal aperture. But it lacks 24mm and image stabilization got some criticize. To me, its pros outweigh its cons, so it should serve me well.&lt;/p&gt;
+
+&lt;p&gt;Before having this lens, what I would take with me was usually a 24-105mm lens so having 105-200mm is a huge benefit. This means I can take pictures of subjects that are far away thereby eliminate distraction.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/gallery/2021/DSC02009.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/gallery/2021/DSC02952.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/gallery/2021/DSC02957.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/gallery/2021/DSC03153.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/gallery/2021/DSC03582.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Nevertheless, telephoto lenses do more than that, it also compresses the scene and makes it dramatic.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/gallery/2021/DSC01713.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/gallery/2021/DSC03169.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/gallery/2021/DSC03376.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This lens also provides some sort of macro capability which makes it suitable for some product shots.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/gallery/2021/DSC01450.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/gallery/2021/Keyboard.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/gallery/2021/DSC01984.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/gallery/2021/PEN-F.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/gallery/2021/DSC03010.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/gallery/2021/DSC03107.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;While we lose that 24mm focal length, we do get a brighter aperture which makes a difference when you’re shooting in a dark situation and you need that shutter speed.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/gallery/2021/DSC03482.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/gallery/2021/DSC03486.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/gallery/2021/DSC03531.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Since it has a zoom range from 28mm to 200mm, you can make different compositions in a scene without swapping the lens.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/gallery/2021/DSC01899.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/gallery/2021/DSC01934.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/gallery/2021/DSC01987.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/gallery/2021/DSC01999.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/gallery/2021/DSC02465.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/gallery/2021/DSC02482.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/gallery/2021/DSC03194.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/gallery/2021/DSC03340.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Sharpness-wise, I found it adequate for the 42-megapixel sensor.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/gallery/2021/DSC01991.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This image is cropped to 5.5 megapixels and it’s still usable for social media sharing.&lt;/p&gt;
+
+&lt;p&gt;Admittedly, Sony 24-105mm gives you more resolution but it’s more heavy and expensive, not to mention the abbreviated zoom range.&lt;/p&gt;
+
+&lt;p&gt;Lack of image stabilization means you need to rely on the IBIS and let’s be honest, Sony’s IBIS is very poor. For me with multiple tires and errors, I can make 1/30s at 200mm.&lt;/p&gt;
+
+&lt;p&gt;Consider its price, quality, and size, I do not have any complaints about it. However, I would recommend the Tamron 17-28 f/2.8 as a complement to it and with 17-200mm, you’re pretty much covered.&lt;/p&gt;
+
+&lt;p&gt;Bonus: Some photos took with 17-28mm&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/gallery/2021/DSC02895.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/gallery/2021/DSC03065.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/gallery/2021/DSC03260.jpg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/gallery/2021/DSC03292.jpg&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sat, 11 Sep 2021 00:00:00 +0800</pubDate>
+        <link>/Tamron-28-200-Review/</link>
+        <guid isPermaLink="true">/Tamron-28-200-Review/</guid>
+        
+        <category>Gear</category>
+        
+        
+        <category>Photography</category>
+        
+      </item>
     
       <item>
         <title>Revisit on Photography Gears I've Used</title>
         <description>&lt;h1&gt;You can find photos I took &lt;a href=&quot;/gallery&quot;&gt;here&lt;/a&gt;&lt;/h1&gt;
 
 &lt;p&gt;I started photography back in late 2014 when I picked up gears my dad no longer uses. I had a Nikon D200 and three lenses: Nikon 17-35mm f/2.8D, Nikon 80-200mm f/2.8D, and Nikon 105mm f/2.8G Micro.&lt;/p&gt;
+
 &lt;div style=&quot;text-align: center; width: 100%;&quot;&gt;
-&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/D200.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
+  &lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/D200.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
 &lt;/div&gt;
+
 &lt;div style=&quot;text-align: center; width: 100%;&quot;&gt;
-&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/17-35.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
+  &lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/17-35.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
 &lt;/div&gt;
+
 &lt;div style=&quot;text-align: center; width: 100%;&quot;&gt;
-&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/80-200.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
+  &lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/80-200.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
 &lt;/div&gt;
+
 &lt;div style=&quot;text-align: center; width: 100%;&quot;&gt;
-&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/105.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
+  &lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/105.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
 &lt;/div&gt;
+
 &lt;p&gt;Although they were already pretty outdated back in 2014, they taught me the basics of photography, things like aperture, shutter speed, and ISO.&lt;/p&gt;
 
 &lt;p&gt;I used D200 for a little more than half a year and took some pictures of landscapes, flowers, and black-headed gulls that migration to Kunming (where I live) every year. The D200 only has 10 megapixels and the back LCD screen is very low-res, so I couldn’t check if my photos were in focus or if there was any motion blur. Meanwhile, I’m in the early stage of photography, so I’m satisfied with a few photos taken on D200.&lt;/p&gt;
 
 &lt;p&gt;In June 2015, I got the chance for a new camera. Since I’m on a budget, I got myself an entry-level full-frame camera with a kit lens: Nikon D610 and Nikon 24-120mm f/4G.&lt;/p&gt;
 &lt;div style=&quot;text-align: center; width: 100%;&quot;&gt;
-&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/D610.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
+  &lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/D610.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
 &lt;/div&gt;
+
 &lt;div style=&quot;text-align: center; width: 100%;&quot;&gt;
-&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/24-120.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
+  &lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/24-120.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
 &lt;/div&gt;
 &lt;p&gt;Why a full-frame camera and a standard zoom lens you may ask? Full frame camera was of course for really making use of these full-frame lenses, I never knew what 17mm was like on full-frame. As for the standard zoom lens, I really needed a one-lens solution when I went out. I usually needed to carry two lenses, because 17-35mm was a little bit limiting on the long end. I also tried a flash but didn’t quite get the hang of how to use flash.&lt;/p&gt;
 
@@ -46,9 +191,11 @@
 &lt;p&gt;My high school was pretty close to my home so bringing a DSLR (Digital Single-lens Reflex Camera) to school wasn’t a huge deal. But my university was quite far from my home plus we didn’t have many class events going on so I wasn’t willing to take my camera there. I took way fewer photos during 2016-2017 and that’s why I decided to sell some gears I didn’t use much. I ended up keeping only the 24-120mm and 80-200mm. By the way, I used the money I got from selling those gears for a new MacBook Pro and that was probably one of the best purchases I ever made.&lt;/p&gt;
 
 &lt;p&gt;I went to Japan in the summer of 2017 and before that trip, I purchased a Nikon 50mm f/1.8G as a supplement of 24-120mm.&lt;/p&gt;
+
 &lt;div style=&quot;text-align: center; width: 100%;&quot;&gt;
-&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/50%201.8.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
+  &lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/50%201.8.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
 &lt;/div&gt;
+
 &lt;p&gt;This was my first time using a prime lens (except that macro lens). However, unlike many other people, I didn’t get blown away by that shallow depth of field, but I did like the compactness of the prime lenses. As for the trip, I had to admit that Japan is a fantastic place for taking photos, I took quite a few great photos there.&lt;/p&gt;
 
 &lt;p&gt;The only problem I had was, after carrying the camera in a bag with a rather poorly-design load system, I started to feel that DSLR was too bulky. That’s when I turned my focus on mirrorless cameras.&lt;/p&gt;
@@ -58,22 +205,29 @@
 &lt;p&gt;After a little bit of research, I came to the conclusion that mirrorless cameras are as good as DSLRs in most aspects. So I decided to ditch all my camera gears in exchange for the mirrorless system. I decided to go for Sony APS-C (Advanced Photo System type-C) cameras because I heard they have the best AF (Auto Focus) system.&lt;/p&gt;
 
 &lt;p&gt;In the cold winter of 2018, I cleared out all my gears and brought a Sony A6300 with Sony 16-50mm f/3.5-5.6 kit lens and a second-hand Zeiss Batis 25mm f/2.&lt;/p&gt;
+
 &lt;div style=&quot;text-align: center; width: 100%;&quot;&gt;
-&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/A6300.jpeg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
+  &lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/A6300.jpeg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
 &lt;/div&gt;
+
 &lt;div style=&quot;text-align: center; width: 100%;&quot;&gt;
-&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/25%202.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
+  &lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/25%202.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
 &lt;/div&gt;
+
 &lt;p&gt;Carrying a camera wasn’t a pain anymore. However, there are some compromises. Since the camera is quite small, the handling and the battery life are quite worse compared to DSLR. What’s also interesting was that I didn’t quite like the EVF (Electronic Viewfinder) at first. I felt it’s very low-res compared to OVF (Optical Viewfinder) so I wasn’t confident about the image I took until I saw the photos on my computer.&lt;/p&gt;
 
 &lt;p&gt;And that Zeiss lens became a 35mm-ish equivalent lens on an APS-C camera and I quickly fall in love with the 35mm focal length. After a while with this lens, I felt like this lens was a kind of waste on an APS-C camera. So I sold it and got myself a Sigma 16mm f/1.4 and a better Sony 18-135mm f/3.5-5.6 kit lens.&lt;/p&gt;
+
 &lt;div style=&quot;text-align: center; width: 100%;&quot;&gt;
-&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/18-135.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
+  &lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/18-135.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
 &lt;/div&gt;
+
 &lt;p&gt;That 18-135mm lens was a newly released one at the time so it’s sharp for a travel zoom lens. The best part was, this lens was sold as a kit lens with A6300 so you could get an amazing price if you buy the open-box version. I really liked this lens, compact, great zoom range, relatively sharp, and has some macro capability. The only downside I would say is the slow maximum aperture so I had to crank my ISO up.&lt;/p&gt;
+
 &lt;div style=&quot;text-align: center; width: 100%;&quot;&gt;
-&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/16%201.4.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
+  &lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/16%201.4.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
 &lt;/div&gt;
+
 &lt;p&gt;The Sigma 16mm prime is also pretty good. This is my first time using an f/1.4 lens and I was often amazed by the low ISO value I could shoot with. Nevertheless, it’s kind of bulky on an APS-C camera.&lt;/p&gt;
 
 &lt;p&gt;I took these two lenses to Thailand (again) in 2018 and they served me just right. I had no complaint whatsoever about them.&lt;/p&gt;
@@ -81,37 +235,47 @@
 &lt;p&gt;But we all know what’s wrong with Sony APS-C cameras. They don’t have good color science, lack a front control dial and most importantly, there aren’t many APS-C lenses.&lt;/p&gt;
 
 &lt;p&gt;Naturally, I looked for Fujifilm cameras as they have good color and probably the most extensive line of APS-C lenses. I got a Fujifilm X-T2 alone with a wide-angle Fujifilm 10-24mm f/4 lens and a Fujifilm 35mm f/1.4 lens.&lt;/p&gt;
+
 &lt;div style=&quot;text-align: center; width: 100%;&quot;&gt;
-&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/X-T2.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
+  &lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/X-T2.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
 &lt;/div&gt;
 
 &lt;p&gt;Granted, many people liked Fujifilm for its retro design and its film simulation. However, I didn’t think they’re overwhelmingly better than the competitions. That retro design means no large grip and ok-ish handling. The X-Trans sensor Fujifilm uses, I actually found it has an impact on the fine detail on my images. If you zoom in, you’ll find some worm-like patterns. Moreover, since I shoot only RAW, good color means little to nothing for me.&lt;/p&gt;
+
 &lt;div style=&quot;text-align: center; width: 100%;&quot;&gt;
-&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/35%201.4.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
+  &lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/35%201.4.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
 &lt;/div&gt;
+
 &lt;p&gt;To be fair, that 35mm 1.4 lens is very compact and produces some amazing photos. The only disadvantage would be that slow and noisy AF system.&lt;/p&gt;
+
 &lt;div style=&quot;text-align: center; width: 100%;&quot;&gt;
-&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/10-24.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
+  &lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/10-24.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
 &lt;/div&gt;
+
 &lt;p&gt;As for the 10-24mm lens, I think there is nothing to write home about.&lt;/p&gt;
 
 &lt;p&gt;Since I was not happy about the image quality of the Fujifilm camera, I quickly sold it after only about 4 months of use. And this time I wanted to try a full-frame mirrorless camera.&lt;/p&gt;
 
 &lt;p&gt;Unfortunately, my budget was tight so I could only get a Sony A7R2 and a Sony 24-105mm f/4 lens.&lt;/p&gt;
+
 &lt;div style=&quot;text-align: center; width: 100%;&quot;&gt;
-&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/A7R2.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
+  &lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/A7R2.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
 &lt;/div&gt;
 
 &lt;p&gt;The A7R2 was criticized for many things like its short battery life and slow AF, but at least it got that 42 megapixels sensor. I got to say its image quality blew me away. From high ISO to dynamic range, everything that comes from that sensor is simply amazing. Ok, maybe not the color. But you did feel all those shortcomings of A7R2 whenever you use it. Since I mainly shoot landscapes and slice of life, I didn’t bother too much by the AF speed. Just bring an extra battery and you’ll just be fine.&lt;/p&gt;
+
 &lt;div style=&quot;text-align: center; width: 100%;&quot;&gt;
-&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/S24-105.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
+  &lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/S24-105.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
 &lt;/div&gt;
+
 &lt;p&gt;Let’s talk about that 24-105mm lens for a while. Simply put, it’s the best 24-105mm lens on the market. It’s very sharp, focuses quickly, and has a better minimal focus distance which means it’s useful when you want to shoot some small objects. Unfortunately, it’s also a tad expensive than the competitions.&lt;/p&gt;
 
 &lt;p&gt;Remember how I liked the 35mm focal length when I used the Zeiss lens? Well, I thought it’s a good time to introduce myself with the 35mm focal length again so I brought a Sony 35mm f/2.8 ZA lens.&lt;/p&gt;
+
 &lt;div style=&quot;text-align: center; width: 100%;&quot;&gt;
-&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/35%202.8.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
+  &lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/35%202.8.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
 &lt;/div&gt;
+
 &lt;p&gt;Apart from 35mm, I brought it for its extremely compact size. F/2.8 may sound slow for a prime lens but really, I didn’t need the shallow depth of field and the camera has good high ISO performance. Anyway, it quickly became the go-to lens for me.&lt;/p&gt;
 
 &lt;p&gt;By far, I’ve used both APS-C and full-frame systems, but there was one thing left, M43 (Micro Four-Thirds). I was interested in this system when I did the research for mirrorless cameras back in late 2017, but I never really fall for it fearing its small sensor size would have too much impact on the image quality.&lt;/p&gt;
@@ -119,18 +283,23 @@
 &lt;p&gt;One day, I came across a photographer online that used purely M43 cameras. I really like his photos and found no sign of unacceptable image quality. After reading his blog and did some research myself, I did something that sounds crazy. I sold my full-frame camera and brought an M43 camera.&lt;/p&gt;
 
 &lt;p&gt;I had two choices at the time with identical price points: Olympus E-M1 Mark II or Panasonic G9. I ended up choosing the latter one for its better video capability. The funny thing was, I never shot a single video on G9 but the G9 tended to be the model with more resell value half a year later so I do not regret it.&lt;/p&gt;
+
 &lt;div style=&quot;text-align: center; width: 100%;&quot;&gt;
-&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/G9.jpeg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
+  &lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/G9.jpeg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Together with G9 were two lenses: Panasonic Leica 12-60mm f/2.8-4   and Panasonic 45-150mm f/4-5.6.&lt;/p&gt;
+&lt;p&gt;Together with G9 were two lenses: Panasonic Leica 12-60mm f/2.8-4 and Panasonic 45-150mm f/4-5.6.&lt;/p&gt;
+
 &lt;div style=&quot;text-align: center; width: 100%;&quot;&gt;
-&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/12-60.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
+  &lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/12-60.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
 &lt;/div&gt;
+
 &lt;p&gt;The very first thing I found out was that 12-60mm on the G9 is fantastic. The SOOC (Straight Out of Camera) color is the best I’ve ever seen. This lens also has a shocking 0.6x maximum magnification on the telephoto end so it could act as a macro lens.&lt;/p&gt;
+
 &lt;div style=&quot;text-align: center; width: 100%;&quot;&gt;
-&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/45-150.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
+  &lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/45-150.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
 &lt;/div&gt;
+
 &lt;p&gt;The 45-150mm was also very useful, it was very affordable while providing the 300mm equivalent field of view. Albeit slow as far as the aperture is concerned.&lt;/p&gt;
 
 &lt;p&gt;Now let’s talk about things I never experienced on previous cameras. First is that fully articulating screen. It’s very useful when you want to shoot from different angles although sometimes the traditional tilt screen may be more useful. The second is IBIS (In-body Image Stabilization), A7R2 has this but it’s lackluster. The IBIS on G9 is insane, I could handheld the camera for two seconds and still get sharp images. This is simply out of question on A7R2. Due to the longer exposure time, I found myself uses ISO 200 quite often, so the weak high ISO performance of M43 cameras is kind of eliminated here.&lt;/p&gt;
@@ -138,29 +307,38 @@
 &lt;p&gt;To be honest, M43 systems are the best system I’ve got my hands on. It got an extensive yet affordable lens lineup, and the portability plus IBIS makes it a travel-friendly system. Unfortunately, Panasonic and Olympus didn’t play the cards well. M43 systems are going to an end sooner than everyone thought. As much as I liked M43, I couldn’t invest more in a dying system. And this time, I went for the final mainstream brand I didn’t try before: Canon.&lt;/p&gt;
 
 &lt;p&gt;Canon is being bashed all these years for its outdated sensor technology and I brought the least advanced of them, the Canon EOS RP.&lt;/p&gt;
+
 &lt;div style=&quot;text-align: center; width: 100%;&quot;&gt;
-&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/RP.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
+  &lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/RP.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
 &lt;/div&gt;
+
 &lt;p&gt;This camera although has the same sensor as that on Canon 6D Mark II, is a more affordable model. While it’s entry-level and you could definitely tell from its build quality, at least you get a fully articulating screen and a comfortable grip.&lt;/p&gt;
+
 &lt;div style=&quot;text-align: center; width: 100%;&quot;&gt;
-&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/C24-105.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
+  &lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/C24-105.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
 &lt;/div&gt;
+
 &lt;p&gt;The lenses I got with the camera were Canon RF 24-105 f/4 and Canon RF 35mm f/1.8 Macro. The 24-105mm is nothing special so I’ll skip it.&lt;/p&gt;
+
 &lt;div style=&quot;text-align: center; width: 100%;&quot;&gt;
-&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/35%201.8.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
+  &lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/35%201.8.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
 &lt;/div&gt;
+
 &lt;p&gt;The 35mm lens, on the other hand, provides you 0.5x magnification in a consumer-level lens which is unseen before. This lens is relatively cheap and compact, but I really hated the noisy and slow AF system.
 Another benefit with Canon mirrorless cameras is you get to use EF lenses in native AF speed. Therefore, I also got the chance to play with Canon EF 16-35mm f/2.8 L II, Canon EF 70-300mm f4-5.6 L, and Canon EF 100-400mm f/4.5-5.6 L II. All these lenses are superb except that 70-300mm is a bad copy but anyway I had some quite lovely pictures with them.&lt;/p&gt;
 
 &lt;p&gt;I took a trip mainly for photography to Chongqing in late 2020 and I started to feel the importance of telephoto lenses in traveling. However, telephoto lenses are usually very heavy so we tend to leave them at home. Therefore I start to seek light telephoto lenses. While searching, one lens popped into my eyes: Tamron 28-200mm f/2.8-5.6. Yes, it’s a super zoom lens but hey, it’s compact and got a relatively bright aperture, and most importantly, its image quality is good for a super zoom lens. Some people complained but not having 24mm but for me, if 28mm isn’t wide enough, neither is 24mm. Just get yourself another wide-angle lens.&lt;/p&gt;
 
 &lt;p&gt;And here we go again, I sold all Canon gears and got a Sony A7R3 and this Tamron 28-200mm lens.&lt;/p&gt;
+
 &lt;div style=&quot;text-align: center; width: 100%;&quot;&gt;
-&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/A7R3.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
+  &lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/A7R3.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
 &lt;/div&gt;
+
 &lt;div style=&quot;text-align: center; width: 100%;&quot;&gt;
 &lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/28-200.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
 &lt;/div&gt;
+
 &lt;p&gt;I was quite happy with this combo. I got the same, if not better, image quality as A7R2 while having better handling and battery life. And the quality of this lens is also quite satisfying. You get decent magnification, f/2.8 at 28mm and you can zoom all the way up to 200mm while this combo is just 1.2kg.&lt;/p&gt;
 
 &lt;p&gt;I would say that A7R3 is the first camera I would not feel like ‘wanting for more’. For the next few years, I’d like to invest more in lenses. The Sony FE mount really has the best lens lineup right now, and I can’t wait to play some of them.&lt;/p&gt;
@@ -168,7 +346,7 @@ Another benefit with Canon mirrorless cameras is you get to use EF lenses in nat
 &lt;p&gt;– Update on 2021.9.6 –&lt;/p&gt;
 
 &lt;div style=&quot;text-align: center; width: 100%;&quot;&gt;
-&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/17-28.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
+  &lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/photo-gears/17-28.jpg&quot; style=&quot;margin: 0 auto; width: 50%;&quot; /&gt;
 &lt;/div&gt;
 
 &lt;p&gt;As I said before, having an ultra-wide lens is a good combo for 28-200 which is why I bought Tamron 17-28 f/2.8 lenses. It’s relatively cheap, has a constant f/2.8 aperture, and is really lightweight. It compromised on the focal range but it makes a perfect combo with 28-200 as there’s no overlapping between the two. With coverage from 17mm all the way to 200mm, it’s safe to say that they satisfy 95% of my photography. Not to mention the whole setup weighs only 1.7kg. I would only miss a third lens when I need more than 200mm but hey, I can always crop my image as I have 42 megapixels.&lt;/p&gt;
@@ -1178,94 +1356,6 @@ If we use the command “git log”, we can see all the commits we’ve done so 
         
         
         <category>Hardware</category>
-        
-      </item>
-    
-      <item>
-        <title>简单介绍显卡新技术 RTRT, DLSS and RIS</title>
-        <description>&lt;p&gt;现在的新显卡除了绝对游戏性能以外，独家功能也是一大卖点。NVIDIA的20系显卡带来了RT和DLSS，而AMD的Navi显卡带来了RIS。对于消费者来说可能对这些功能不太熟悉，因此本文简单介绍这些功能背后的原理。&lt;/p&gt;
-
-&lt;h1&gt;光线追踪：追的是什么光线&lt;/h1&gt;
-&lt;p&gt;自然界中，光源发出光线以后会沿直线传播，直到有阻止它前进的物体。当然，传播的过程中会遇到三种情况：折射、反射、吸收。当光源发出的一部分光线通过一系列折射反射以后进入我们的眼睛，就形成了我们看见的场景。&lt;/p&gt;
-
-&lt;p&gt;为了模拟更真实的光照效果，我们不难想到，让计算机模拟现实的情况，计算从光源发出的每一条光线以及它在传播过程中的各种反射折射。这对于一帧静态的图片问题不大，因为我们可以有很长的时间渲染。但是对于游戏这种实时的、并且需要每秒钟渲染几十张画面的应用来说，上述方法太复杂，因此我们必须将其简化。&lt;/p&gt;
-
-&lt;p&gt;上述方法最大的问题在于，从光源出发的光线，最终会有很大一部分被物体吸收而没有传到“眼睛”——也就是摄像机里面。这里的摄像机就是指观察场景的窗口，通常就是我们看到的画面。那我们可以换一个思路，如果只计算那些最后进入到摄像机的光线，那就相对于计算的每一条光线都是对我们最后渲染有意义的光线，效率达到最高。&lt;/p&gt;
-
-&lt;p&gt;但是那些光线是最终进入到摄像机的呢？我们只能通过逆向推导的方式得知。也就是反过来从摄像机出发，发出一条想象中的光线，通过一系列反射折射直到出现下列情况之一，则停止追踪：该光线不与任意平面相交、该光线与光源相交且光源不是反射面、达到允许的最大追踪深度。上述算法即为光线追踪的基本算法。&lt;/p&gt;
-
-&lt;div style=&quot;text-align: center; width: 100%;&quot;&gt;
-&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/ray-tracing/ray_trace_diagram.jpg&quot; style=&quot;margin: 0 auto; width: 80%;&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;计算过程中，我们需要知道每一次折射、反射的系数，并通过下面几个公式推导出当前像素点的颜色值。&lt;/p&gt;
-
-&lt;div style=&quot;text-align: center; width: 100%;&quot;&gt;
-&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/ray-tracing/ray_tracing_illustration_first_bounce.png&quot; style=&quot;margin: 0 auto; width: 80%;&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;上图②式中，ka表示环境光反射系数，Ia表示环境光强度，Ii表示点光源，Kd表示漫反射系数，L为点光源单位方向向量，N为观察方向单位法向量，Ks表示一个固定的镜面反射系数，V为观察方向单位法向量，R为镜面反射方向向量，n为镜面反射参数。&lt;/p&gt;
-
-&lt;p&gt;在不考虑递归的情况下，上式可以写为：&lt;/p&gt;
-
-&lt;h2&gt;I = Idiff + Ispec = Ka*Ia + Kd*Ii*(N*L) + Ks*Ii*(N*H)^n&lt;/h2&gt;
-
-&lt;p&gt;该公式即表示光照表明上某点处的漫反射与镜面反射。&lt;/p&gt;
-&lt;h1&gt;不只算法，还有硬件革新&lt;/h1&gt;
-&lt;p&gt;上述算法很早以前就提出，但是一直没有运用到游戏里面。那为什么这次NVIDIA的20系显卡可以做到光线追踪呢？&lt;/p&gt;
-
-&lt;p&gt;我们不妨先看看新显卡的架构：&lt;/p&gt;
-
-&lt;div style=&quot;text-align: center; width: 100%;&quot;&gt;
-&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/ray-tracing/6071743d-b2ac-46aa-865e-02273980932b.png&quot; style=&quot;margin: 0 auto; width: 80%;&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;可以看到，Turing架构配备了RT Cores。根据NVIDIA的说法，新显卡和上一代比起来在光线追踪上快了8倍。那么问题来了，RT Cores是怎么做到硬件加速的呢？&lt;/p&gt;
-
-&lt;p&gt;RT Cores其实是对BVH（Bounding volume hierarchy）做了加速。BVH把集合对象包裹在树的叶子节点中，越接近根节点则包含的对象越多。下图就是一个BVH的例子。&lt;/p&gt;
-
-&lt;div style=&quot;text-align: center; width: 100%;&quot;&gt;
-&lt;img src=&quot;https://lightfocus-1256547063.cos.ap-hongkong.myqcloud.com/posts/ray-tracing/1000px-example_of_bounding_volume_hierarchy.jpg&quot; style=&quot;margin: 0 auto; width: 80%;&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;那这和光线追踪有什么关系呢？&lt;/p&gt;
-
-&lt;p&gt;光线追踪过程中，95%的时间都用于计算光线与表明求交。如果一个场景有多个对象，则可能出现计算光线与不可见对象的求交。因此我们可以将相邻对象用一个包围体包起来（即BVH），如果光线与该包围体没有交点，则不需要计算包围体里面的任何对象，大大减少计算时间。&lt;/p&gt;
-
-&lt;p&gt;别忘了上面架构图里面还有Tensor Cores，这就涉及到下一个技术，DLSS了。&lt;/p&gt;
-&lt;h1&gt;DLSS，脑补出来的画面&lt;/h1&gt;
-&lt;p&gt;DLSS全称Deep Learning Super Sampling，从名字就可以看出，这是一项利用深度学习实现的技术。一句话概括就是低分辨率生成高分辨率，提升帧数。DLSS有两代，原理上不太相同。&lt;/p&gt;
-&lt;h2&gt;DLSS 1.0&lt;/h2&gt;
-&lt;p&gt;需要针对每一个游戏训练神经网络，因此这个时候只支持战地5和地铁：离去。&lt;/p&gt;
-
-&lt;p&gt;简单来说就是游戏厂商提供至少64张8K原始图像去训练一个模型。在游戏过程中利用1080p或者2K的图像先生成8K的图像，再缩到4K显示，以实现2倍DLSS的效果。&lt;/p&gt;
-
-&lt;p&gt;第一代DLSS的问题主要有以下几个：每个游戏都需要训练、只能运行在4K分辨率，清晰度不算太高。&lt;/p&gt;
-&lt;h2&gt;DLSS 2.0&lt;/h2&gt;
-&lt;p&gt;2019年8月，DLSS2.0首先被用在Control这个游戏上，但是这一次没有使用AI技术。&lt;/p&gt;
-
-&lt;p&gt;2020年4月，NVIDIA发布了445.75驱动，提供了DLSS2.0。这个DLSS2.0同样使用了AI技术，但是不再需要对每一个游戏进行训练。&lt;/p&gt;
-
-&lt;p&gt;NVIDIA使用低分辨率图像和对应的高分辨率图像训练神经网络，并将神经网络存储在驱动里面。&lt;/p&gt;
-
-&lt;p&gt;游戏进行时，游戏引擎将低分辨率图像给DLSS，并由DLSS生成高分辨率图像。除此之外，游戏引擎还提供了运动矢量，以便DLSS预测下一帧图像应该是什么样子。&lt;/p&gt;
-
-&lt;p&gt;DLSS2.0增加了普适性，而且效果也比第一代DLSS好。&lt;/p&gt;
-&lt;h1&gt;RIS：另一种方法？&lt;/h1&gt;
-&lt;p&gt;AMD在推出Navi显卡的同时介绍了一项新技术：RIS（Radeon Image Sharpening），也就是图像锐化。它会针对游戏中每一帧画面做对比度分析，对于对比度高的边缘部分进行锐化，让低分辨率的图像看上去更锐。&lt;/p&gt;
-
-&lt;p&gt;除此之外，RIS也能很好改善后期抗锯齿带来的模糊感。以FXAA为例，它会首先通过寻找深度差异较大的物体以确定边缘，然后将边缘模糊。这种技术虽然性能好，但是因为不是通过超采样得到的平滑边缘，所以整个画面会模糊。而RIS技术就可以解决这种后期抗锯齿所带来的问题。&lt;/p&gt;
-
-&lt;p&gt;较DLSS更优的是，此技术不需要做任何额外适配，只需要开启RIS和GPU缩放即可。&lt;/p&gt;
-</description>
-        <pubDate>Wed, 19 Aug 2020 00:00:00 +0800</pubDate>
-        <link>/Introduction-of-Ray-Tracing/</link>
-        <guid isPermaLink="true">/Introduction-of-Ray-Tracing/</guid>
-        
-        <category>Technology</category>
-        
-        
-        <category>Graphics</category>
         
       </item>
     
